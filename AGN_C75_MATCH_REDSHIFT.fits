@@ -1,0 +1,553 @@
+SIMPLE  =                    T / Standard FITS format                           BITPIX  =                    8 / Character data                                 NAXIS   =                    1 / Text string                                    NAXIS1  =                20491 / Number of characters                           VOTMETA =                    T / Table metadata in VOTable format               EXTEND  =                    T / There are standard extensions                  COMMENT                                                                         COMMENT The data in this primary HDU consists of bytes which                    COMMENT comprise a VOTABLE document.                                            COMMENT The VOTable describes the metadata of the table contained               COMMENT in the following BINTABLE extension.                                    COMMENT Such a BINTABLE extension can be used on its own as a perfectly         COMMENT good table, but the information from this HDU may provide some          COMMENT useful additional metadata.                                             COMMENT There is one following BINTABLE.                                        NTABLE  =                    1 / Number of following BINTABLE HDUs              END                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             <?xml version='1.0'?>
+<VOTABLE version="1.4"
+ xmlns="http://www.ivoa.net/xml/VOTable/v1.3">
+<!--
+ !  VOTable written by STIL version 4.1-3 (uk.ac.starlink.votable.VOTableWriter)
+ !  at 2023-06-08T18:31:40
+ !-->
+<RESOURCE>
+<!-- Describes BINTABLE extensions in the following HDU.-->
+<TABLE name="Joined" nrows="9">
+<DESCRIPTION>
+Creation date: Mon Apr 10 22:46:56 2023
+###################################### 
+ PHOTOMETRIC REDSHIFT with OPTIONS   # 
+ Config file            : lpz_616_PatriciaFort.para
+ CAT_IN                 : catalog1520_PatriciaFort.in
+ CAT_OUT                : catalog1520_PatriciaFort.out
+ CAT_LINES              : 0 1000000000
+ PARA_OUT               : /opt/lephare/config/output_lpz.para
+ INP_TYPE               : F
+ CAT_FMT[0:MEME 1:MMEE] : 0
+ CAT_MAG                : AB
+ ZPHOTLIB               : GAL_GAZPAR QSO_GAZPAR STAR_GAZPAR 
+ FIR_LIB                : 
+ FIR_LMIN               : 7.000000
+ FIR_CONT               : -1.000000
+ FIR_SCALE              : -1.000000
+ FIR_FREESCALE          : YES
+ FIR_SUBSTELLAR         : NO
+ ERR_SCALE              : 0.010000 0.010000 0.010000 0.010000 0.010000 
+ ERR_FACTOR             : 1.000000 
+ BD_SCALE               : 0
+ GLB_CONTEXT            : -1
+ FORB_CONTEXT           : -1
+ DZ_WIN                 : 0.300000
+ MIN_THRES              : 0.020000
+ MASS_SCALE             : 0.000000 0.000000
+ MAG_ABS                : -24.000000 -10.000000
+ MAG_ABS_AGN            : 0.000000 0.000000
+ MAG_REF                : 0
+ NZ_PRIOR               : 2 2
+ Z_INTERP               : YES
+ Z_METHOD               : BEST
+ PROB_INTZ              : 0.000000 
+ MABS_METHOD            : 1
+ MABS_CONTEXT           : 0 
+ MABS_REF               : 10 
+ ADAPT_BAND             : 3
+ ADAPT_LIM              : -1000.000000 10000.000000
+ ADAPT_ZBIN             : 0.000100 60.000000
+ ZFIX                   : NO
+ SPEC_OUT               : NO
+ CHI_OUT               : NO
+ PDZ_OUT                : catalog1520_PatriciaFort
+###################################### 
+ Format: 
+ IDENT 1 Z_ML 2 Z_ML68_LOW 3 Z_ML68_HIGH 4 Z_BEST 5 Z_BEST68_LOW 6 Z_BEST68_HIGH 7 CHI_BEST 8 MOD_BEST 9 EXTLAW_BEST 10 EBV_BEST 11 SCALE_BEST 12 NBAND_USED 13 Z_SEC 14 CHI_SEC 15 MOD_SEC 16 Z_QSO 17 CHI_QSO 18 MOD_QSO 19 MOD_STAR 20 CHI_STAR 21 CONTEXT 22 ZSPEC 23 MAG_OBS() 24-28 ERR_MAG_OBS() 29-33 MAG_MOD() 34-38 MAG_ABS() 39-43 MABS_FILT() 44-48 STRING_INPUT 49
+ Format topcat: 
+ IDENT  Z_ML  Z_ML68_LOW  Z_ML68_HIGH  Z_BEST  Z_BEST68_LOW  Z_BEST68_HIGH  CHI_BEST  MOD_BEST  EXTLAW_BEST  EBV_BEST  SCALE_BEST  NBAND_USED  Z_SEC  CHI_SEC  MOD_SEC  Z_QSO  CHI_QSO  MOD_QSO  MOD_STAR  CHI_STAR  CONTEXT  ZSPEC  MAG_OBS0  MAG_OBS1  MAG_OBS2  MAG_OBS3  MAG_OBS4  ERR_MAG_OBS0  ERR_MAG_OBS1  ERR_MAG_OBS2  ERR_MAG_OBS3  ERR_MAG_OBS4  MAG_MOD0  MAG_MOD1  MAG_MOD2  MAG_MOD3  MAG_MOD4  MAG_ABS0  MAG_ABS1  MAG_ABS2  MAG_ABS3  MAG_ABS4  MABS_FILT0  MABS_FILT1  MABS_FILT2  MABS_FILT3  MABS_FILT4
+</DESCRIPTION>
+<PARAM arraysize="23" datatype="char" name="Match type" value="Pair match; All matches">
+<DESCRIPTION>Type of match which created this table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="3" datatype="char" name="Match algorithm" value="Sky">
+<DESCRIPTION>Matching algorithm which created this table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="82" datatype="char" name="Join Type" value="1 and 2 (An output row for each row represented in both input tables (INNER JOIN))">
+<DESCRIPTION>Determines which rows appear in output table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="17" datatype="char" name="First input table" value="1: NSF_ELG_z.fits"/>
+<PARAM arraysize="17" datatype="char" name="Second input table" value="2: NSF_ELG_y.fits"/>
+<PARAM arraysize="33" datatype="char" name="Match type" value="Pair match; Best match, symmetric">
+<DESCRIPTION>Type of match which created this table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="3" datatype="char" name="Match algorithm" value="Sky">
+<DESCRIPTION>Matching algorithm which created this table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="82" datatype="char" name="Join Type" value="1 and 2 (An output row for each row represented in both input tables (INNER JOIN))">
+<DESCRIPTION>Determines which rows appear in output table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="22" datatype="char" name="First input table" value="3: NSF1_match_ELG.fits"/>
+<PARAM arraysize="11" datatype="char" name="Second input table" value="2: C75.sort"/>
+<PARAM arraysize="23" datatype="char" name="Match type" value="Pair match; All matches">
+<DESCRIPTION>Type of match which created this table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="3" datatype="char" name="Match algorithm" value="Sky">
+<DESCRIPTION>Matching algorithm which created this table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="82" datatype="char" name="Join Type" value="1 and 2 (An output row for each row represented in both input tables (INNER JOIN))">
+<DESCRIPTION>Determines which rows appear in output table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="17" datatype="char" name="First input table" value="1: NSF_ELG_z.fits"/>
+<PARAM arraysize="17" datatype="char" name="Second input table" value="2: NSF_ELG_y.fits"/>
+<PARAM arraysize="33" datatype="char" name="Match type" value="Pair match; Best match, symmetric">
+<DESCRIPTION>Type of match which created this table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="3" datatype="char" name="Match algorithm" value="Sky">
+<DESCRIPTION>Matching algorithm which created this table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="82" datatype="char" name="Join Type" value="1 and 2 (An output row for each row represented in both input tables (INNER JOIN))">
+<DESCRIPTION>Determines which rows appear in output table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="23" datatype="char" name="First input table" value="10: NSF1_match_ELG.fits"/>
+<PARAM arraysize="31" datatype="char" name="Second input table" value="9: catalog1520_PatriciaFort.out"/>
+<PARAM arraysize="33" datatype="char" name="Match type" value="Pair match; Best match, symmetric">
+<DESCRIPTION>Type of match which created this table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="3" datatype="char" name="Match algorithm" value="Sky">
+<DESCRIPTION>Matching algorithm which created this table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="82" datatype="char" name="Join Type" value="1 and 2 (An output row for each row represented in both input tables (INNER JOIN))">
+<DESCRIPTION>Determines which rows appear in output table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="13" datatype="char" name="First input table" value="5: match(3,2)"/>
+<PARAM arraysize="24" datatype="char" name="Second input table" value="6: cat_gazpar_match.fits"/>
+<FIELD datatype="int" name="NUMBER_1_1">
+<VALUES null='-2147483648'/>
+</FIELD>
+<FIELD datatype="float" name="FLUX_ISO_1_1"/>
+<FIELD datatype="float" name="FLUXERR_ISO_1_1"/>
+<FIELD datatype="float" name="MAG_ISO_1_1"/>
+<FIELD datatype="float" name="MAGERR_ISO_1_1"/>
+<FIELD arraysize="13" datatype="float" name="FLUX_APER_1_1"/>
+<FIELD arraysize="13" datatype="float" name="FLUXERR_APER_1_1"/>
+<FIELD arraysize="13" datatype="float" name="MAGERR_APER_1_1"/>
+<FIELD arraysize="13" datatype="double" name="MAG_APER_1_1"/>
+<FIELD datatype="float" name="FLUX_AUTO_1_1"/>
+<FIELD datatype="float" name="FLUXERR_AUTO_1_1"/>
+<FIELD datatype="double" name="MAG_AUTO_1_1"/>
+<FIELD datatype="float" name="MAGERR_AUTO_1_1"/>
+<FIELD datatype="float" name="BACKGROUND_1_1"/>
+<FIELD datatype="double" name="ALPHAPEAK_J2000_1_1"/>
+<FIELD datatype="double" name="DELTAPEAK_J2000_1_1"/>
+<FIELD datatype="float" name="X_IMAGE_1_1"/>
+<FIELD datatype="float" name="Y_IMAGE_1_1"/>
+<FIELD datatype="double" name="ALPHA_J2000_1_1"/>
+<FIELD datatype="double" name="DELTA_J2000_1_1"/>
+<FIELD datatype="short" name="FLAGS_1_1">
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="float" name="ELONGATION_1_1"/>
+<FIELD datatype="float" name="ELLIPTICITY_1_1"/>
+<FIELD datatype="float" name="CLASS_STAR_1_1"/>
+<FIELD datatype="float" name="FLUX_RADIUS_1_1"/>
+<FIELD datatype="float" name="SNR_WIN_1_1"/>
+<FIELD arraysize="13" datatype="double" name="MAG_APER_g_1_1"/>
+<FIELD arraysize="13" datatype="float" name="FLUX_APER_g_1_1"/>
+<FIELD arraysize="13" datatype="float" name="FLUXERR_APER_g_1_1"/>
+<FIELD arraysize="13" datatype="float" name="MAGERR_APER_g_1_1"/>
+<FIELD datatype="float" name="MAGERR_AUTO_g_1_1"/>
+<FIELD datatype="float" name="BACKGROUND_g_1_1"/>
+<FIELD datatype="double" name="MAG_AUTO_g_1_1"/>
+<FIELD arraysize="13" datatype="double" name="MAG_APER_r_1_1"/>
+<FIELD arraysize="13" datatype="float" name="FLUX_APER_r_1_1"/>
+<FIELD arraysize="13" datatype="float" name="FLUXERR_APER_r_1_1"/>
+<FIELD arraysize="13" datatype="float" name="MAGERR_APER_r_1_1"/>
+<FIELD datatype="float" name="MAGERR_AUTO_r_1_1"/>
+<FIELD datatype="float" name="BACKGROUND_r_1_1"/>
+<FIELD datatype="double" name="MAG_AUTO_r_1_1"/>
+<FIELD arraysize="13" datatype="double" name="MAG_APER_i_1_1"/>
+<FIELD arraysize="13" datatype="float" name="FLUX_APER_i_1_1"/>
+<FIELD arraysize="13" datatype="float" name="FLUXERR_APER_i_1_1"/>
+<FIELD arraysize="13" datatype="float" name="MAGERR_APER_i_1_1"/>
+<FIELD datatype="float" name="MAGERR_AUTO_i_1_1"/>
+<FIELD datatype="float" name="BACKGROUND_i_1_1"/>
+<FIELD datatype="double" name="MAG_AUTO_i_1_1"/>
+<FIELD arraysize="13" datatype="double" name="MAG_APER_z_1_1"/>
+<FIELD arraysize="13" datatype="float" name="FLUX_APER_z_1_1"/>
+<FIELD arraysize="13" datatype="float" name="FLUXERR_APER_z_1_1"/>
+<FIELD arraysize="13" datatype="float" name="MAGERR_APER_z_1_1"/>
+<FIELD datatype="float" name="MAGERR_AUTO_z_1_1"/>
+<FIELD datatype="float" name="BACKGROUND_z_1_1"/>
+<FIELD datatype="double" name="MAG_AUTO_z_1_1"/>
+<FIELD arraysize="13" datatype="double" name="MAG_APER_y_1_1"/>
+<FIELD arraysize="13" datatype="float" name="FLUX_APER_y_1_1"/>
+<FIELD arraysize="13" datatype="float" name="FLUXERR_APER_y_1_1"/>
+<FIELD arraysize="13" datatype="float" name="MAGERR_APER_y_1_1"/>
+<FIELD datatype="float" name="MAGERR_AUTO_y_1_1"/>
+<FIELD datatype="float" name="BACKGROUND_y_1_1"/>
+<FIELD datatype="double" name="MAG_AUTO_y_1_1"/>
+<FIELD datatype="int" name="NUMBER_2">
+<VALUES null='-2147483648'/>
+</FIELD>
+<FIELD datatype="float" name="FLUX_ISO_2"/>
+<FIELD datatype="float" name="FLUXERR_ISO_2"/>
+<FIELD datatype="float" name="MAG_ISO_2"/>
+<FIELD datatype="float" name="MAGERR_ISO_2"/>
+<FIELD arraysize="13" datatype="float" name="FLUX_APER_2"/>
+<FIELD arraysize="13" datatype="float" name="FLUXERR_APER_2"/>
+<FIELD arraysize="13" datatype="float" name="MAGERR_APER_2"/>
+<FIELD arraysize="13" datatype="double" name="MAG_APER_2"/>
+<FIELD datatype="float" name="FLUX_AUTO_2"/>
+<FIELD datatype="float" name="FLUXERR_AUTO_2"/>
+<FIELD datatype="double" name="MAG_AUTO_2"/>
+<FIELD datatype="float" name="MAGERR_AUTO_2"/>
+<FIELD datatype="float" name="BACKGROUND_2"/>
+<FIELD datatype="double" name="ALPHAPEAK_J2000_2"/>
+<FIELD datatype="double" name="DELTAPEAK_J2000_2"/>
+<FIELD datatype="float" name="X_IMAGE_2"/>
+<FIELD datatype="float" name="Y_IMAGE_2"/>
+<FIELD datatype="double" name="ALPHA_J2000_2"/>
+<FIELD datatype="double" name="DELTA_J2000_2"/>
+<FIELD datatype="short" name="FLAGS_2">
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="float" name="ELONGATION_2"/>
+<FIELD datatype="float" name="ELLIPTICITY_2"/>
+<FIELD datatype="float" name="CLASS_STAR_2"/>
+<FIELD datatype="float" name="FLUX_RADIUS_2"/>
+<FIELD datatype="float" name="SNR_WIN_2"/>
+<FIELD arraysize="13" datatype="double" name="MAG_APER_g_2"/>
+<FIELD arraysize="13" datatype="float" name="FLUX_APER_g_2"/>
+<FIELD arraysize="13" datatype="float" name="FLUXERR_APER_g_2"/>
+<FIELD arraysize="13" datatype="float" name="MAGERR_APER_g_2"/>
+<FIELD datatype="float" name="MAGERR_AUTO_g_2"/>
+<FIELD datatype="float" name="BACKGROUND_g_2"/>
+<FIELD datatype="double" name="MAG_AUTO_g_2"/>
+<FIELD arraysize="13" datatype="double" name="MAG_APER_r_2"/>
+<FIELD arraysize="13" datatype="float" name="FLUX_APER_r_2"/>
+<FIELD arraysize="13" datatype="float" name="FLUXERR_APER_r_2"/>
+<FIELD arraysize="13" datatype="float" name="MAGERR_APER_r_2"/>
+<FIELD datatype="float" name="MAGERR_AUTO_r_2"/>
+<FIELD datatype="float" name="BACKGROUND_r_2"/>
+<FIELD datatype="double" name="MAG_AUTO_r_2"/>
+<FIELD arraysize="13" datatype="double" name="MAG_APER_i_2"/>
+<FIELD arraysize="13" datatype="float" name="FLUX_APER_i_2"/>
+<FIELD arraysize="13" datatype="float" name="FLUXERR_APER_i_2"/>
+<FIELD arraysize="13" datatype="float" name="MAGERR_APER_i_2"/>
+<FIELD datatype="float" name="MAGERR_AUTO_i_2"/>
+<FIELD datatype="float" name="BACKGROUND_i_2"/>
+<FIELD datatype="double" name="MAG_AUTO_i_2"/>
+<FIELD arraysize="13" datatype="double" name="MAG_APER_z_2"/>
+<FIELD arraysize="13" datatype="float" name="FLUX_APER_z_2"/>
+<FIELD arraysize="13" datatype="float" name="FLUXERR_APER_z_2"/>
+<FIELD arraysize="13" datatype="float" name="MAGERR_APER_z_2"/>
+<FIELD datatype="float" name="MAGERR_AUTO_z_2"/>
+<FIELD datatype="float" name="BACKGROUND_z_2"/>
+<FIELD datatype="double" name="MAG_AUTO_z_2"/>
+<FIELD arraysize="13" datatype="double" name="MAG_APER_y_2"/>
+<FIELD arraysize="13" datatype="float" name="FLUX_APER_y_2"/>
+<FIELD arraysize="13" datatype="float" name="FLUXERR_APER_y_2"/>
+<FIELD arraysize="13" datatype="float" name="MAGERR_APER_y_2"/>
+<FIELD datatype="float" name="MAGERR_AUTO_y_2"/>
+<FIELD datatype="float" name="BACKGROUND_y_2"/>
+<FIELD datatype="double" name="MAG_AUTO_y_2"/>
+<FIELD datatype="double" name="Separation_1" ucd="pos.angDistance" unit="arcsec">
+<DESCRIPTION>Distance between matched objects along a great circle</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="col1"/>
+<FIELD datatype="double" name="col2"/>
+<FIELD datatype="float" name="col3"/>
+<FIELD datatype="float" name="col4"/>
+<FIELD datatype="float" name="col5"/>
+<FIELD datatype="float" name="col6"/>
+<FIELD datatype="float" name="col7"/>
+<FIELD datatype="float" name="col8"/>
+<FIELD datatype="float" name="col9"/>
+<FIELD datatype="float" name="col10"/>
+<FIELD arraysize="4" datatype="char" name="col11"/>
+<FIELD datatype="int" name="NUMBER_1_2">
+<VALUES null='-2147483648'/>
+</FIELD>
+<FIELD datatype="float" name="FLUX_ISO_1_2"/>
+<FIELD datatype="float" name="FLUXERR_ISO_1_2"/>
+<FIELD datatype="float" name="MAG_ISO_1_2"/>
+<FIELD datatype="float" name="MAGERR_ISO_1_2"/>
+<FIELD arraysize="13" datatype="float" name="FLUX_APER_1_2"/>
+<FIELD arraysize="13" datatype="float" name="FLUXERR_APER_1_2"/>
+<FIELD arraysize="13" datatype="float" name="MAGERR_APER_1_2"/>
+<FIELD arraysize="13" datatype="double" name="MAG_APER_1_2"/>
+<FIELD datatype="float" name="FLUX_AUTO_1_2"/>
+<FIELD datatype="float" name="FLUXERR_AUTO_1_2"/>
+<FIELD datatype="double" name="MAG_AUTO_1_2"/>
+<FIELD datatype="float" name="MAGERR_AUTO_1_2"/>
+<FIELD datatype="float" name="BACKGROUND_1_2"/>
+<FIELD datatype="double" name="ALPHAPEAK_J2000_1_2"/>
+<FIELD datatype="double" name="DELTAPEAK_J2000_1_2"/>
+<FIELD datatype="float" name="X_IMAGE_1_2"/>
+<FIELD datatype="float" name="Y_IMAGE_1_2"/>
+<FIELD datatype="double" name="ALPHA_J2000_1_2"/>
+<FIELD datatype="double" name="DELTA_J2000_1_2"/>
+<FIELD datatype="short" name="FLAGS_1_2">
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="float" name="ELONGATION_1_2"/>
+<FIELD datatype="float" name="ELLIPTICITY_1_2"/>
+<FIELD datatype="float" name="CLASS_STAR_1_2"/>
+<FIELD datatype="float" name="FLUX_RADIUS_1_2"/>
+<FIELD datatype="float" name="SNR_WIN_1_2"/>
+<FIELD arraysize="13" datatype="double" name="MAG_APER_g_1_2"/>
+<FIELD arraysize="13" datatype="float" name="FLUX_APER_g_1_2"/>
+<FIELD arraysize="13" datatype="float" name="FLUXERR_APER_g_1_2"/>
+<FIELD arraysize="13" datatype="float" name="MAGERR_APER_g_1_2"/>
+<FIELD datatype="float" name="MAGERR_AUTO_g_1_2"/>
+<FIELD datatype="float" name="BACKGROUND_g_1_2"/>
+<FIELD datatype="double" name="MAG_AUTO_g_1_2"/>
+<FIELD arraysize="13" datatype="double" name="MAG_APER_r_1_2"/>
+<FIELD arraysize="13" datatype="float" name="FLUX_APER_r_1_2"/>
+<FIELD arraysize="13" datatype="float" name="FLUXERR_APER_r_1_2"/>
+<FIELD arraysize="13" datatype="float" name="MAGERR_APER_r_1_2"/>
+<FIELD datatype="float" name="MAGERR_AUTO_r_1_2"/>
+<FIELD datatype="float" name="BACKGROUND_r_1_2"/>
+<FIELD datatype="double" name="MAG_AUTO_r_1_2"/>
+<FIELD arraysize="13" datatype="double" name="MAG_APER_i_1_2"/>
+<FIELD arraysize="13" datatype="float" name="FLUX_APER_i_1_2"/>
+<FIELD arraysize="13" datatype="float" name="FLUXERR_APER_i_1_2"/>
+<FIELD arraysize="13" datatype="float" name="MAGERR_APER_i_1_2"/>
+<FIELD datatype="float" name="MAGERR_AUTO_i_1_2"/>
+<FIELD datatype="float" name="BACKGROUND_i_1_2"/>
+<FIELD datatype="double" name="MAG_AUTO_i_1_2"/>
+<FIELD arraysize="13" datatype="double" name="MAG_APER_z_1_2"/>
+<FIELD arraysize="13" datatype="float" name="FLUX_APER_z_1_2"/>
+<FIELD arraysize="13" datatype="float" name="FLUXERR_APER_z_1_2"/>
+<FIELD arraysize="13" datatype="float" name="MAGERR_APER_z_1_2"/>
+<FIELD datatype="float" name="MAGERR_AUTO_z_1_2"/>
+<FIELD datatype="float" name="BACKGROUND_z_1_2"/>
+<FIELD datatype="double" name="MAG_AUTO_z_1_2"/>
+<FIELD arraysize="13" datatype="double" name="MAG_APER_y_1_2"/>
+<FIELD arraysize="13" datatype="float" name="FLUX_APER_y_1_2"/>
+<FIELD arraysize="13" datatype="float" name="FLUXERR_APER_y_1_2"/>
+<FIELD arraysize="13" datatype="float" name="MAGERR_APER_y_1_2"/>
+<FIELD datatype="float" name="MAGERR_AUTO_y_1_2"/>
+<FIELD datatype="float" name="BACKGROUND_y_1_2"/>
+<FIELD datatype="double" name="MAG_AUTO_y_1_2"/>
+<FIELD datatype="int" name="IDENT">
+<VALUES null='-2147483648'/>
+</FIELD>
+<FIELD datatype="double" name="Z_ML"/>
+<FIELD datatype="double" name="Z_ML68_LOW"/>
+<FIELD datatype="double" name="Z_ML68_HIGH"/>
+<FIELD datatype="float" name="Z_BEST"/>
+<FIELD datatype="float" name="Z_BEST68_LOW"/>
+<FIELD datatype="float" name="Z_BEST68_HIGH"/>
+<FIELD datatype="float" name="CHI_BEST"/>
+<FIELD datatype="short" name="MOD_BEST">
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="short" name="EXTLAW_BEST">
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="float" name="EBV_BEST"/>
+<FIELD datatype="float" name="SCALE_BEST"/>
+<FIELD datatype="short" name="NBAND_USED">
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="float" name="Z_SEC"/>
+<FIELD datatype="float" name="CHI_SEC"/>
+<FIELD datatype="short" name="MOD_SEC">
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="float" name="Z_QSO"/>
+<FIELD datatype="float" name="CHI_QSO"/>
+<FIELD datatype="short" name="MOD_QSO">
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="short" name="MOD_STAR">
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="float" name="CHI_STAR"/>
+<FIELD datatype="short" name="CONTEXT">
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="double" name="ZSPEC"/>
+<FIELD datatype="float" name="MAG_OBS0"/>
+<FIELD datatype="float" name="MAG_OBS1"/>
+<FIELD datatype="float" name="MAG_OBS2"/>
+<FIELD datatype="float" name="MAG_OBS3"/>
+<FIELD datatype="float" name="MAG_OBS4"/>
+<FIELD datatype="float" name="ERR_MAG_OBS0"/>
+<FIELD datatype="float" name="ERR_MAG_OBS1"/>
+<FIELD datatype="double" name="ERR_MAG_OBS2"/>
+<FIELD datatype="float" name="ERR_MAG_OBS3"/>
+<FIELD datatype="float" name="ERR_MAG_OBS4"/>
+<FIELD datatype="float" name="MAG_MOD0"/>
+<FIELD datatype="float" name="MAG_MOD1"/>
+<FIELD datatype="float" name="MAG_MOD2"/>
+<FIELD datatype="float" name="MAG_MOD3"/>
+<FIELD datatype="float" name="MAG_MOD4"/>
+<FIELD datatype="double" name="MAG_ABS0"/>
+<FIELD datatype="double" name="MAG_ABS1"/>
+<FIELD datatype="double" name="MAG_ABS2"/>
+<FIELD datatype="double" name="MAG_ABS3"/>
+<FIELD datatype="double" name="MAG_ABS04"/>
+<FIELD datatype="short" name="MABS_FILT0">
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="short" name="MABS_FILT1">
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="short" name="MABS_FILT2">
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="short" name="MABS_FILT3">
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="short" name="MABS_FILT4">
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="short" name="STRING_INPUT">
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="double" name="Separation" ucd="pos.angDistance" unit="arcsec">
+<DESCRIPTION>Distance between matched objects along a great circle</DESCRIPTION>
+</FIELD>
+<!-- Dummy VOTable - no DATA element -->
+</TABLE>
+</RESOURCE>
+</VOTABLE>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     XTENSION= 'BINTABLE'           / binary table extension                         BITPIX  =                    8 / 8-bit bytes                                    NAXIS   =                    2 / 2-dimensional table                            NAXIS1  =                 5516 / width of table in bytes                        NAXIS2  =                    9 / number of rows in table                        PCOUNT  =                    0 / size of special data area                      GCOUNT  =                    1 / one data group                                 TFIELDS =                  245 / number of columns                              EXTNAME = 'Joined  '           / table name                                     TTYPE1  = 'NUMBER_1_1'         / label for column 1                             TFORM1  = 'J       '           / format for column 1                            TNULL1  =          -2147483648 / blank value for column 1                       TTYPE2  = 'FLUX_ISO_1_1'       / label for column 2                             TFORM2  = 'E       '           / format for column 2                            TTYPE3  = 'FLUXERR_ISO_1_1'    / label for column 3                             TFORM3  = 'E       '           / format for column 3                            TTYPE4  = 'MAG_ISO_1_1'        / label for column 4                             TFORM4  = 'E       '           / format for column 4                            TTYPE5  = 'MAGERR_ISO_1_1'     / label for column 5                             TFORM5  = 'E       '           / format for column 5                            TTYPE6  = 'FLUX_APER_1_1'      / label for column 6                             TFORM6  = '13E     '           / format for column 6                            TTYPE7  = 'FLUXERR_APER_1_1'   / label for column 7                             TFORM7  = '13E     '           / format for column 7                            TTYPE8  = 'MAGERR_APER_1_1'    / label for column 8                             TFORM8  = '13E     '           / format for column 8                            TTYPE9  = 'MAG_APER_1_1'       / label for column 9                             TFORM9  = '13D     '           / format for column 9                            TTYPE10 = 'FLUX_AUTO_1_1'      / label for column 10                            TFORM10 = 'E       '           / format for column 10                           TTYPE11 = 'FLUXERR_AUTO_1_1'   / label for column 11                            TFORM11 = 'E       '           / format for column 11                           TTYPE12 = 'MAG_AUTO_1_1'       / label for column 12                            TFORM12 = 'D       '           / format for column 12                           TTYPE13 = 'MAGERR_AUTO_1_1'    / label for column 13                            TFORM13 = 'E       '           / format for column 13                           TTYPE14 = 'BACKGROUND_1_1'     / label for column 14                            TFORM14 = 'E       '           / format for column 14                           TTYPE15 = 'ALPHAPEAK_J2000_1_1' / label for column 15                           TFORM15 = 'D       '           / format for column 15                           TTYPE16 = 'DELTAPEAK_J2000_1_1' / label for column 16                           TFORM16 = 'D       '           / format for column 16                           TTYPE17 = 'X_IMAGE_1_1'        / label for column 17                            TFORM17 = 'E       '           / format for column 17                           TTYPE18 = 'Y_IMAGE_1_1'        / label for column 18                            TFORM18 = 'E       '           / format for column 18                           TTYPE19 = 'ALPHA_J2000_1_1'    / label for column 19                            TFORM19 = 'D       '           / format for column 19                           TTYPE20 = 'DELTA_J2000_1_1'    / label for column 20                            TFORM20 = 'D       '           / format for column 20                           TTYPE21 = 'FLAGS_1_1'          / label for column 21                            TFORM21 = 'I       '           / format for column 21                           TNULL21 =               -32768 / blank value for column 21                      TTYPE22 = 'ELONGATION_1_1'     / label for column 22                            TFORM22 = 'E       '           / format for column 22                           TTYPE23 = 'ELLIPTICITY_1_1'    / label for column 23                            TFORM23 = 'E       '           / format for column 23                           TTYPE24 = 'CLASS_STAR_1_1'     / label for column 24                            TFORM24 = 'E       '           / format for column 24                           TTYPE25 = 'FLUX_RADIUS_1_1'    / label for column 25                            TFORM25 = 'E       '           / format for column 25                           TTYPE26 = 'SNR_WIN_1_1'        / label for column 26                            TFORM26 = 'E       '           / format for column 26                           TTYPE27 = 'MAG_APER_g_1_1'     / label for column 27                            TFORM27 = '13D     '           / format for column 27                           TTYPE28 = 'FLUX_APER_g_1_1'    / label for column 28                            TFORM28 = '13E     '           / format for column 28                           TTYPE29 = 'FLUXERR_APER_g_1_1' / label for column 29                            TFORM29 = '13E     '           / format for column 29                           TTYPE30 = 'MAGERR_APER_g_1_1'  / label for column 30                            TFORM30 = '13E     '           / format for column 30                           TTYPE31 = 'MAGERR_AUTO_g_1_1'  / label for column 31                            TFORM31 = 'E       '           / format for column 31                           TTYPE32 = 'BACKGROUND_g_1_1'   / label for column 32                            TFORM32 = 'E       '           / format for column 32                           TTYPE33 = 'MAG_AUTO_g_1_1'     / label for column 33                            TFORM33 = 'D       '           / format for column 33                           TTYPE34 = 'MAG_APER_r_1_1'     / label for column 34                            TFORM34 = '13D     '           / format for column 34                           TTYPE35 = 'FLUX_APER_r_1_1'    / label for column 35                            TFORM35 = '13E     '           / format for column 35                           TTYPE36 = 'FLUXERR_APER_r_1_1' / label for column 36                            TFORM36 = '13E     '           / format for column 36                           TTYPE37 = 'MAGERR_APER_r_1_1'  / label for column 37                            TFORM37 = '13E     '           / format for column 37                           TTYPE38 = 'MAGERR_AUTO_r_1_1'  / label for column 38                            TFORM38 = 'E       '           / format for column 38                           TTYPE39 = 'BACKGROUND_r_1_1'   / label for column 39                            TFORM39 = 'E       '           / format for column 39                           TTYPE40 = 'MAG_AUTO_r_1_1'     / label for column 40                            TFORM40 = 'D       '           / format for column 40                           TTYPE41 = 'MAG_APER_i_1_1'     / label for column 41                            TFORM41 = '13D     '           / format for column 41                           TTYPE42 = 'FLUX_APER_i_1_1'    / label for column 42                            TFORM42 = '13E     '           / format for column 42                           TTYPE43 = 'FLUXERR_APER_i_1_1' / label for column 43                            TFORM43 = '13E     '           / format for column 43                           TTYPE44 = 'MAGERR_APER_i_1_1'  / label for column 44                            TFORM44 = '13E     '           / format for column 44                           TTYPE45 = 'MAGERR_AUTO_i_1_1'  / label for column 45                            TFORM45 = 'E       '           / format for column 45                           TTYPE46 = 'BACKGROUND_i_1_1'   / label for column 46                            TFORM46 = 'E       '           / format for column 46                           TTYPE47 = 'MAG_AUTO_i_1_1'     / label for column 47                            TFORM47 = 'D       '           / format for column 47                           TTYPE48 = 'MAG_APER_z_1_1'     / label for column 48                            TFORM48 = '13D     '           / format for column 48                           TTYPE49 = 'FLUX_APER_z_1_1'    / label for column 49                            TFORM49 = '13E     '           / format for column 49                           TTYPE50 = 'FLUXERR_APER_z_1_1' / label for column 50                            TFORM50 = '13E     '           / format for column 50                           TTYPE51 = 'MAGERR_APER_z_1_1'  / label for column 51                            TFORM51 = '13E     '           / format for column 51                           TTYPE52 = 'MAGERR_AUTO_z_1_1'  / label for column 52                            TFORM52 = 'E       '           / format for column 52                           TTYPE53 = 'BACKGROUND_z_1_1'   / label for column 53                            TFORM53 = 'E       '           / format for column 53                           TTYPE54 = 'MAG_AUTO_z_1_1'     / label for column 54                            TFORM54 = 'D       '           / format for column 54                           TTYPE55 = 'MAG_APER_y_1_1'     / label for column 55                            TFORM55 = '13D     '           / format for column 55                           TTYPE56 = 'FLUX_APER_y_1_1'    / label for column 56                            TFORM56 = '13E     '           / format for column 56                           TTYPE57 = 'FLUXERR_APER_y_1_1' / label for column 57                            TFORM57 = '13E     '           / format for column 57                           TTYPE58 = 'MAGERR_APER_y_1_1'  / label for column 58                            TFORM58 = '13E     '           / format for column 58                           TTYPE59 = 'MAGERR_AUTO_y_1_1'  / label for column 59                            TFORM59 = 'E       '           / format for column 59                           TTYPE60 = 'BACKGROUND_y_1_1'   / label for column 60                            TFORM60 = 'E       '           / format for column 60                           TTYPE61 = 'MAG_AUTO_y_1_1'     / label for column 61                            TFORM61 = 'D       '           / format for column 61                           TTYPE62 = 'NUMBER_2'           / label for column 62                            TFORM62 = 'J       '           / format for column 62                           TNULL62 =          -2147483648 / blank value for column 62                      TTYPE63 = 'FLUX_ISO_2'         / label for column 63                            TFORM63 = 'E       '           / format for column 63                           TTYPE64 = 'FLUXERR_ISO_2'      / label for column 64                            TFORM64 = 'E       '           / format for column 64                           TTYPE65 = 'MAG_ISO_2'          / label for column 65                            TFORM65 = 'E       '           / format for column 65                           TTYPE66 = 'MAGERR_ISO_2'       / label for column 66                            TFORM66 = 'E       '           / format for column 66                           TTYPE67 = 'FLUX_APER_2'        / label for column 67                            TFORM67 = '13E     '           / format for column 67                           TTYPE68 = 'FLUXERR_APER_2'     / label for column 68                            TFORM68 = '13E     '           / format for column 68                           TTYPE69 = 'MAGERR_APER_2'      / label for column 69                            TFORM69 = '13E     '           / format for column 69                           TTYPE70 = 'MAG_APER_2'         / label for column 70                            TFORM70 = '13D     '           / format for column 70                           TTYPE71 = 'FLUX_AUTO_2'        / label for column 71                            TFORM71 = 'E       '           / format for column 71                           TTYPE72 = 'FLUXERR_AUTO_2'     / label for column 72                            TFORM72 = 'E       '           / format for column 72                           TTYPE73 = 'MAG_AUTO_2'         / label for column 73                            TFORM73 = 'D       '           / format for column 73                           TTYPE74 = 'MAGERR_AUTO_2'      / label for column 74                            TFORM74 = 'E       '           / format for column 74                           TTYPE75 = 'BACKGROUND_2'       / label for column 75                            TFORM75 = 'E       '           / format for column 75                           TTYPE76 = 'ALPHAPEAK_J2000_2'  / label for column 76                            TFORM76 = 'D       '           / format for column 76                           TTYPE77 = 'DELTAPEAK_J2000_2'  / label for column 77                            TFORM77 = 'D       '           / format for column 77                           TTYPE78 = 'X_IMAGE_2'          / label for column 78                            TFORM78 = 'E       '           / format for column 78                           TTYPE79 = 'Y_IMAGE_2'          / label for column 79                            TFORM79 = 'E       '           / format for column 79                           TTYPE80 = 'ALPHA_J2000_2'      / label for column 80                            TFORM80 = 'D       '           / format for column 80                           TTYPE81 = 'DELTA_J2000_2'      / label for column 81                            TFORM81 = 'D       '           / format for column 81                           TTYPE82 = 'FLAGS_2 '           / label for column 82                            TFORM82 = 'I       '           / format for column 82                           TNULL82 =               -32768 / blank value for column 82                      TTYPE83 = 'ELONGATION_2'       / label for column 83                            TFORM83 = 'E       '           / format for column 83                           TTYPE84 = 'ELLIPTICITY_2'      / label for column 84                            TFORM84 = 'E       '           / format for column 84                           TTYPE85 = 'CLASS_STAR_2'       / label for column 85                            TFORM85 = 'E       '           / format for column 85                           TTYPE86 = 'FLUX_RADIUS_2'      / label for column 86                            TFORM86 = 'E       '           / format for column 86                           TTYPE87 = 'SNR_WIN_2'          / label for column 87                            TFORM87 = 'E       '           / format for column 87                           TTYPE88 = 'MAG_APER_g_2'       / label for column 88                            TFORM88 = '13D     '           / format for column 88                           TTYPE89 = 'FLUX_APER_g_2'      / label for column 89                            TFORM89 = '13E     '           / format for column 89                           TTYPE90 = 'FLUXERR_APER_g_2'   / label for column 90                            TFORM90 = '13E     '           / format for column 90                           TTYPE91 = 'MAGERR_APER_g_2'    / label for column 91                            TFORM91 = '13E     '           / format for column 91                           TTYPE92 = 'MAGERR_AUTO_g_2'    / label for column 92                            TFORM92 = 'E       '           / format for column 92                           TTYPE93 = 'BACKGROUND_g_2'     / label for column 93                            TFORM93 = 'E       '           / format for column 93                           TTYPE94 = 'MAG_AUTO_g_2'       / label for column 94                            TFORM94 = 'D       '           / format for column 94                           TTYPE95 = 'MAG_APER_r_2'       / label for column 95                            TFORM95 = '13D     '           / format for column 95                           TTYPE96 = 'FLUX_APER_r_2'      / label for column 96                            TFORM96 = '13E     '           / format for column 96                           TTYPE97 = 'FLUXERR_APER_r_2'   / label for column 97                            TFORM97 = '13E     '           / format for column 97                           TTYPE98 = 'MAGERR_APER_r_2'    / label for column 98                            TFORM98 = '13E     '           / format for column 98                           TTYPE99 = 'MAGERR_AUTO_r_2'    / label for column 99                            TFORM99 = 'E       '           / format for column 99                           TTYPE100= 'BACKGROUND_r_2'     / label for column 100                           TFORM100= 'E       '           / format for column 100                          TTYPE101= 'MAG_AUTO_r_2'       / label for column 101                           TFORM101= 'D       '           / format for column 101                          TTYPE102= 'MAG_APER_i_2'       / label for column 102                           TFORM102= '13D     '           / format for column 102                          TTYPE103= 'FLUX_APER_i_2'      / label for column 103                           TFORM103= '13E     '           / format for column 103                          TTYPE104= 'FLUXERR_APER_i_2'   / label for column 104                           TFORM104= '13E     '           / format for column 104                          TTYPE105= 'MAGERR_APER_i_2'    / label for column 105                           TFORM105= '13E     '           / format for column 105                          TTYPE106= 'MAGERR_AUTO_i_2'    / label for column 106                           TFORM106= 'E       '           / format for column 106                          TTYPE107= 'BACKGROUND_i_2'     / label for column 107                           TFORM107= 'E       '           / format for column 107                          TTYPE108= 'MAG_AUTO_i_2'       / label for column 108                           TFORM108= 'D       '           / format for column 108                          TTYPE109= 'MAG_APER_z_2'       / label for column 109                           TFORM109= '13D     '           / format for column 109                          TTYPE110= 'FLUX_APER_z_2'      / label for column 110                           TFORM110= '13E     '           / format for column 110                          TTYPE111= 'FLUXERR_APER_z_2'   / label for column 111                           TFORM111= '13E     '           / format for column 111                          TTYPE112= 'MAGERR_APER_z_2'    / label for column 112                           TFORM112= '13E     '           / format for column 112                          TTYPE113= 'MAGERR_AUTO_z_2'    / label for column 113                           TFORM113= 'E       '           / format for column 113                          TTYPE114= 'BACKGROUND_z_2'     / label for column 114                           TFORM114= 'E       '           / format for column 114                          TTYPE115= 'MAG_AUTO_z_2'       / label for column 115                           TFORM115= 'D       '           / format for column 115                          TTYPE116= 'MAG_APER_y_2'       / label for column 116                           TFORM116= '13D     '           / format for column 116                          TTYPE117= 'FLUX_APER_y_2'      / label for column 117                           TFORM117= '13E     '           / format for column 117                          TTYPE118= 'FLUXERR_APER_y_2'   / label for column 118                           TFORM118= '13E     '           / format for column 118                          TTYPE119= 'MAGERR_APER_y_2'    / label for column 119                           TFORM119= '13E     '           / format for column 119                          TTYPE120= 'MAGERR_AUTO_y_2'    / label for column 120                           TFORM120= 'E       '           / format for column 120                          TTYPE121= 'BACKGROUND_y_2'     / label for column 121                           TFORM121= 'E       '           / format for column 121                          TTYPE122= 'MAG_AUTO_y_2'       / label for column 122                           TFORM122= 'D       '           / format for column 122                          TTYPE123= 'Separation_1'       / label for column 123                           TFORM123= 'D       '           / format for column 123                          TUNIT123= 'arcsec  '           / units for column 123                           TCOMM123= 'Distance between matched objects along a great circle'               TUCD123 = 'pos.angDistance'                                                     TTYPE124= 'col1    '           / label for column 124                           TFORM124= 'D       '           / format for column 124                          TTYPE125= 'col2    '           / label for column 125                           TFORM125= 'D       '           / format for column 125                          TTYPE126= 'col3    '           / label for column 126                           TFORM126= 'E       '           / format for column 126                          TTYPE127= 'col4    '           / label for column 127                           TFORM127= 'E       '           / format for column 127                          TTYPE128= 'col5    '           / label for column 128                           TFORM128= 'E       '           / format for column 128                          TTYPE129= 'col6    '           / label for column 129                           TFORM129= 'E       '           / format for column 129                          TTYPE130= 'col7    '           / label for column 130                           TFORM130= 'E       '           / format for column 130                          TTYPE131= 'col8    '           / label for column 131                           TFORM131= 'E       '           / format for column 131                          TTYPE132= 'col9    '           / label for column 132                           TFORM132= 'E       '           / format for column 132                          TTYPE133= 'col10   '           / label for column 133                           TFORM133= 'E       '           / format for column 133                          TTYPE134= 'col11   '           / label for column 134                           TFORM134= '4A      '           / format for column 134                          TTYPE135= 'NUMBER_1_2'         / label for column 135                           TFORM135= 'J       '           / format for column 135                          TNULL135=          -2147483648 / blank value for column 135                     TTYPE136= 'FLUX_ISO_1_2'       / label for column 136                           TFORM136= 'E       '           / format for column 136                          TTYPE137= 'FLUXERR_ISO_1_2'    / label for column 137                           TFORM137= 'E       '           / format for column 137                          TTYPE138= 'MAG_ISO_1_2'        / label for column 138                           TFORM138= 'E       '           / format for column 138                          TTYPE139= 'MAGERR_ISO_1_2'     / label for column 139                           TFORM139= 'E       '           / format for column 139                          TTYPE140= 'FLUX_APER_1_2'      / label for column 140                           TFORM140= '13E     '           / format for column 140                          TTYPE141= 'FLUXERR_APER_1_2'   / label for column 141                           TFORM141= '13E     '           / format for column 141                          TTYPE142= 'MAGERR_APER_1_2'    / label for column 142                           TFORM142= '13E     '           / format for column 142                          TTYPE143= 'MAG_APER_1_2'       / label for column 143                           TFORM143= '13D     '           / format for column 143                          TTYPE144= 'FLUX_AUTO_1_2'      / label for column 144                           TFORM144= 'E       '           / format for column 144                          TTYPE145= 'FLUXERR_AUTO_1_2'   / label for column 145                           TFORM145= 'E       '           / format for column 145                          TTYPE146= 'MAG_AUTO_1_2'       / label for column 146                           TFORM146= 'D       '           / format for column 146                          TTYPE147= 'MAGERR_AUTO_1_2'    / label for column 147                           TFORM147= 'E       '           / format for column 147                          TTYPE148= 'BACKGROUND_1_2'     / label for column 148                           TFORM148= 'E       '           / format for column 148                          TTYPE149= 'ALPHAPEAK_J2000_1_2' / label for column 149                          TFORM149= 'D       '           / format for column 149                          TTYPE150= 'DELTAPEAK_J2000_1_2' / label for column 150                          TFORM150= 'D       '           / format for column 150                          TTYPE151= 'X_IMAGE_1_2'        / label for column 151                           TFORM151= 'E       '           / format for column 151                          TTYPE152= 'Y_IMAGE_1_2'        / label for column 152                           TFORM152= 'E       '           / format for column 152                          TTYPE153= 'ALPHA_J2000_1_2'    / label for column 153                           TFORM153= 'D       '           / format for column 153                          TTYPE154= 'DELTA_J2000_1_2'    / label for column 154                           TFORM154= 'D       '           / format for column 154                          TTYPE155= 'FLAGS_1_2'          / label for column 155                           TFORM155= 'I       '           / format for column 155                          TNULL155=               -32768 / blank value for column 155                     TTYPE156= 'ELONGATION_1_2'     / label for column 156                           TFORM156= 'E       '           / format for column 156                          TTYPE157= 'ELLIPTICITY_1_2'    / label for column 157                           TFORM157= 'E       '           / format for column 157                          TTYPE158= 'CLASS_STAR_1_2'     / label for column 158                           TFORM158= 'E       '           / format for column 158                          TTYPE159= 'FLUX_RADIUS_1_2'    / label for column 159                           TFORM159= 'E       '           / format for column 159                          TTYPE160= 'SNR_WIN_1_2'        / label for column 160                           TFORM160= 'E       '           / format for column 160                          TTYPE161= 'MAG_APER_g_1_2'     / label for column 161                           TFORM161= '13D     '           / format for column 161                          TTYPE162= 'FLUX_APER_g_1_2'    / label for column 162                           TFORM162= '13E     '           / format for column 162                          TTYPE163= 'FLUXERR_APER_g_1_2' / label for column 163                           TFORM163= '13E     '           / format for column 163                          TTYPE164= 'MAGERR_APER_g_1_2'  / label for column 164                           TFORM164= '13E     '           / format for column 164                          TTYPE165= 'MAGERR_AUTO_g_1_2'  / label for column 165                           TFORM165= 'E       '           / format for column 165                          TTYPE166= 'BACKGROUND_g_1_2'   / label for column 166                           TFORM166= 'E       '           / format for column 166                          TTYPE167= 'MAG_AUTO_g_1_2'     / label for column 167                           TFORM167= 'D       '           / format for column 167                          TTYPE168= 'MAG_APER_r_1_2'     / label for column 168                           TFORM168= '13D     '           / format for column 168                          TTYPE169= 'FLUX_APER_r_1_2'    / label for column 169                           TFORM169= '13E     '           / format for column 169                          TTYPE170= 'FLUXERR_APER_r_1_2' / label for column 170                           TFORM170= '13E     '           / format for column 170                          TTYPE171= 'MAGERR_APER_r_1_2'  / label for column 171                           TFORM171= '13E     '           / format for column 171                          TTYPE172= 'MAGERR_AUTO_r_1_2'  / label for column 172                           TFORM172= 'E       '           / format for column 172                          TTYPE173= 'BACKGROUND_r_1_2'   / label for column 173                           TFORM173= 'E       '           / format for column 173                          TTYPE174= 'MAG_AUTO_r_1_2'     / label for column 174                           TFORM174= 'D       '           / format for column 174                          TTYPE175= 'MAG_APER_i_1_2'     / label for column 175                           TFORM175= '13D     '           / format for column 175                          TTYPE176= 'FLUX_APER_i_1_2'    / label for column 176                           TFORM176= '13E     '           / format for column 176                          TTYPE177= 'FLUXERR_APER_i_1_2' / label for column 177                           TFORM177= '13E     '           / format for column 177                          TTYPE178= 'MAGERR_APER_i_1_2'  / label for column 178                           TFORM178= '13E     '           / format for column 178                          TTYPE179= 'MAGERR_AUTO_i_1_2'  / label for column 179                           TFORM179= 'E       '           / format for column 179                          TTYPE180= 'BACKGROUND_i_1_2'   / label for column 180                           TFORM180= 'E       '           / format for column 180                          TTYPE181= 'MAG_AUTO_i_1_2'     / label for column 181                           TFORM181= 'D       '           / format for column 181                          TTYPE182= 'MAG_APER_z_1_2'     / label for column 182                           TFORM182= '13D     '           / format for column 182                          TTYPE183= 'FLUX_APER_z_1_2'    / label for column 183                           TFORM183= '13E     '           / format for column 183                          TTYPE184= 'FLUXERR_APER_z_1_2' / label for column 184                           TFORM184= '13E     '           / format for column 184                          TTYPE185= 'MAGERR_APER_z_1_2'  / label for column 185                           TFORM185= '13E     '           / format for column 185                          TTYPE186= 'MAGERR_AUTO_z_1_2'  / label for column 186                           TFORM186= 'E       '           / format for column 186                          TTYPE187= 'BACKGROUND_z_1_2'   / label for column 187                           TFORM187= 'E       '           / format for column 187                          TTYPE188= 'MAG_AUTO_z_1_2'     / label for column 188                           TFORM188= 'D       '           / format for column 188                          TTYPE189= 'MAG_APER_y_1_2'     / label for column 189                           TFORM189= '13D     '           / format for column 189                          TTYPE190= 'FLUX_APER_y_1_2'    / label for column 190                           TFORM190= '13E     '           / format for column 190                          TTYPE191= 'FLUXERR_APER_y_1_2' / label for column 191                           TFORM191= '13E     '           / format for column 191                          TTYPE192= 'MAGERR_APER_y_1_2'  / label for column 192                           TFORM192= '13E     '           / format for column 192                          TTYPE193= 'MAGERR_AUTO_y_1_2'  / label for column 193                           TFORM193= 'E       '           / format for column 193                          TTYPE194= 'BACKGROUND_y_1_2'   / label for column 194                           TFORM194= 'E       '           / format for column 194                          TTYPE195= 'MAG_AUTO_y_1_2'     / label for column 195                           TFORM195= 'D       '           / format for column 195                          TTYPE196= 'IDENT   '           / label for column 196                           TFORM196= 'J       '           / format for column 196                          TNULL196=          -2147483648 / blank value for column 196                     TTYPE197= 'Z_ML    '           / label for column 197                           TFORM197= 'D       '           / format for column 197                          TTYPE198= 'Z_ML68_LOW'         / label for column 198                           TFORM198= 'D       '           / format for column 198                          TTYPE199= 'Z_ML68_HIGH'        / label for column 199                           TFORM199= 'D       '           / format for column 199                          TTYPE200= 'Z_BEST  '           / label for column 200                           TFORM200= 'E       '           / format for column 200                          TTYPE201= 'Z_BEST68_LOW'       / label for column 201                           TFORM201= 'E       '           / format for column 201                          TTYPE202= 'Z_BEST68_HIGH'      / label for column 202                           TFORM202= 'E       '           / format for column 202                          TTYPE203= 'CHI_BEST'           / label for column 203                           TFORM203= 'E       '           / format for column 203                          TTYPE204= 'MOD_BEST'           / label for column 204                           TFORM204= 'I       '           / format for column 204                          TNULL204=               -32768 / blank value for column 204                     TTYPE205= 'EXTLAW_BEST'        / label for column 205                           TFORM205= 'I       '           / format for column 205                          TNULL205=               -32768 / blank value for column 205                     TTYPE206= 'EBV_BEST'           / label for column 206                           TFORM206= 'E       '           / format for column 206                          TTYPE207= 'SCALE_BEST'         / label for column 207                           TFORM207= 'E       '           / format for column 207                          TTYPE208= 'NBAND_USED'         / label for column 208                           TFORM208= 'I       '           / format for column 208                          TNULL208=               -32768 / blank value for column 208                     TTYPE209= 'Z_SEC   '           / label for column 209                           TFORM209= 'E       '           / format for column 209                          TTYPE210= 'CHI_SEC '           / label for column 210                           TFORM210= 'E       '           / format for column 210                          TTYPE211= 'MOD_SEC '           / label for column 211                           TFORM211= 'I       '           / format for column 211                          TNULL211=               -32768 / blank value for column 211                     TTYPE212= 'Z_QSO   '           / label for column 212                           TFORM212= 'E       '           / format for column 212                          TTYPE213= 'CHI_QSO '           / label for column 213                           TFORM213= 'E       '           / format for column 213                          TTYPE214= 'MOD_QSO '           / label for column 214                           TFORM214= 'I       '           / format for column 214                          TNULL214=               -32768 / blank value for column 214                     TTYPE215= 'MOD_STAR'           / label for column 215                           TFORM215= 'I       '           / format for column 215                          TNULL215=               -32768 / blank value for column 215                     TTYPE216= 'CHI_STAR'           / label for column 216                           TFORM216= 'E       '           / format for column 216                          TTYPE217= 'CONTEXT '           / label for column 217                           TFORM217= 'I       '           / format for column 217                          TNULL217=               -32768 / blank value for column 217                     TTYPE218= 'ZSPEC   '           / label for column 218                           TFORM218= 'D       '           / format for column 218                          TTYPE219= 'MAG_OBS0'           / label for column 219                           TFORM219= 'E       '           / format for column 219                          TTYPE220= 'MAG_OBS1'           / label for column 220                           TFORM220= 'E       '           / format for column 220                          TTYPE221= 'MAG_OBS2'           / label for column 221                           TFORM221= 'E       '           / format for column 221                          TTYPE222= 'MAG_OBS3'           / label for column 222                           TFORM222= 'E       '           / format for column 222                          TTYPE223= 'MAG_OBS4'           / label for column 223                           TFORM223= 'E       '           / format for column 223                          TTYPE224= 'ERR_MAG_OBS0'       / label for column 224                           TFORM224= 'E       '           / format for column 224                          TTYPE225= 'ERR_MAG_OBS1'       / label for column 225                           TFORM225= 'E       '           / format for column 225                          TTYPE226= 'ERR_MAG_OBS2'       / label for column 226                           TFORM226= 'D       '           / format for column 226                          TTYPE227= 'ERR_MAG_OBS3'       / label for column 227                           TFORM227= 'E       '           / format for column 227                          TTYPE228= 'ERR_MAG_OBS4'       / label for column 228                           TFORM228= 'E       '           / format for column 228                          TTYPE229= 'MAG_MOD0'           / label for column 229                           TFORM229= 'E       '           / format for column 229                          TTYPE230= 'MAG_MOD1'           / label for column 230                           TFORM230= 'E       '           / format for column 230                          TTYPE231= 'MAG_MOD2'           / label for column 231                           TFORM231= 'E       '           / format for column 231                          TTYPE232= 'MAG_MOD3'           / label for column 232                           TFORM232= 'E       '           / format for column 232                          TTYPE233= 'MAG_MOD4'           / label for column 233                           TFORM233= 'E       '           / format for column 233                          TTYPE234= 'MAG_ABS0'           / label for column 234                           TFORM234= 'D       '           / format for column 234                          TTYPE235= 'MAG_ABS1'           / label for column 235                           TFORM235= 'D       '           / format for column 235                          TTYPE236= 'MAG_ABS2'           / label for column 236                           TFORM236= 'D       '           / format for column 236                          TTYPE237= 'MAG_ABS3'           / label for column 237                           TFORM237= 'D       '           / format for column 237                          TTYPE238= 'MAG_ABS04'          / label for column 238                           TFORM238= 'D       '           / format for column 238                          TTYPE239= 'MABS_FILT0'         / label for column 239                           TFORM239= 'I       '           / format for column 239                          TNULL239=               -32768 / blank value for column 239                     TTYPE240= 'MABS_FILT1'         / label for column 240                           TFORM240= 'I       '           / format for column 240                          TNULL240=               -32768 / blank value for column 240                     TTYPE241= 'MABS_FILT2'         / label for column 241                           TFORM241= 'I       '           / format for column 241                          TNULL241=               -32768 / blank value for column 241                     TTYPE242= 'MABS_FILT3'         / label for column 242                           TFORM242= 'I       '           / format for column 242                          TNULL242=               -32768 / blank value for column 242                     TTYPE243= 'MABS_FILT4'         / label for column 243                           TFORM243= 'I       '           / format for column 243                          TNULL243=               -32768 / blank value for column 243                     TTYPE244= 'STRING_INPUT'       / label for column 244                           TFORM244= 'I       '           / format for column 244                          TNULL244=               -32768 / blank value for column 244                     TTYPE245= 'Separation'         / label for column 245                           TFORM245= 'D       '           / format for column 245                          TUNIT245= 'arcsec  '           / units for column 245                           TCOMM245= 'Distance between matched objects along a great circle'               TUCD245 = 'pos.angDistance'                                                     DATE-HDU= '2023-06-08T18:31:40' / Date of HDU creation (UTC)                    STILVERS= '4.1-3   '           / Version of STIL software                       STILCLAS= 'uk.ac.starlink.votable.FitsPlusTableWriter' / STIL Author class      END                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               8Bì-@˚A≤´≈= äAf÷ËAñ€A∏ƒA⁄ÛÔA¸7nBÎÈB"<ßBA)zBZ∏^BpªÄBÇ5B¶ÓNBØ;·?˜?-?EL ?] ˛?tÚù?áÉ¢?ìÍí?¨'?ƒ∆r?›/Ô?ˆh@86Ù@v&*=1 =w≤=oÅ=c∂= x=¸
+<˝yΩ<˜∏æ<˙"<ˇqö=T-=fî=CCR@8} *{î@7”J*{î@7ö∂j*{î@7kÜ *{î@7D7**{î@7ë
+*{î@6˛2**{î@6Õ≥™*{î@6´)™*{î@6êÇj*{î@6z™J*{î@65õÍ*{î@6(Í*{îBΩE@¶7Ç@6≥J*{î=t'd=´T@sÿ=_øG¿Pæ®CcAFQ.EDC˝@sÿ=%¨aC¿Pæ®ÛÒ.  ?≠Q≤>Ö‡n=Û˝—@T¯B,Ë @<ÿD?8°+@<ÀI8°+@<uü8°+@<*–?8°+@<¨ˇ8°+@<Mú?8°+@<Zsˇ8°+@X¿Û'Œ(K@X¿Û'Œ(K@X¿Û'Œ(K@X¿Û'Œ(K@X¿Û'Œ(K@X¿Û'Œ(K>=œo>F‚S>áîﬂ>±#2>ªa>úK>ï<fª!@$ø"¢øo)∞ø}∆Åø¸™ ¿a˙>ûÁµ>ªYt>’πr>Ôï?û)?ô¢?d?:Ú?T… ?o}?ÑÔ?≈rc@_≠?Ëø¿@Ú+?€ /?ºÈ?≈*@c@˙AB∆  B∆  B∆  B∆  B∆  B∆  B∆  <rJﬁ@X¿Û'Œ(K@<?!Ï5∏ì@;ÏßÃ5∏ì@;†Yå5∏ì@;HªÏ5∏ì@;‰L5∏ì@:Êl¨5∏ì@:Í^l5∏ì@;Ï5∏ì@;ÂÏ5∏ì@;2å5∏ì@:Ì∫L5∏ì@:ç å5∏ì@Xª+n%>óDÅ>ÀÜ9?È?7àb?_ê∫?Ç¥w?Ä‹¯?aÕZ?UXB?mgñ?~°x?¥N“øß˜>ãıπ>§À|>ª⁄•>“å7>È]c?,˚??$'?;}Ê?R¶‹?j√?ÆuÕ?ËCV?Äù‡?az?Cd?x?‡?	a≤?%≠?I˚8?tSÇ?vØÕ?óÜ?ÜÏB∆  B∆  <®0i@Xª+n%@:5¡”WŸw@9Ìf”WŸw@9∂™ÛWŸw@9âDsWŸw@9dﬂ3WŸw@9BiWŸw@9(é≥WŸw@8˝Ê3WŸw@8›ÉìWŸw@8Ã:WŸw@8Ω ≥WŸw@8q3WŸw@8P¨≥WŸw?ˇ˛8@&=@J2Ç@n'@á∞Ù@ôö.@®ì8@ƒâÆ@‹”=@Í˛Ê@¯9ﬂA#"vA7CÌ>dªw>Ü˚¢>ö≈>¨∆ë>øy
+>”ÂO>Á9√?i[?¨g?,∏ﬁ?@%Ó?èo?ø‰h=¯h˜=·˛:=”÷=…√=ƒ'0=ø√G=æ´á=æ"Z=¡y=ÃWï=◊5H=ıMç>ç2>äªÂ™@8€”WŸw@9VT#&.@9¿c&.@8œÁ#&.@8ûv#&.@8t”É&.@8LoÉ&.@8+⁄C&.@7˚Ò£&.@7ÿ†£&.@7∏d√&.@7üvÉ&.@7lÛc&.@7g#&.@ã1v@∂Î@·ƒA€˚A¶ÍA5'6AKØAqˇŒAâdƒAöIØA®ƒ.A fÑAŒ√È>çÀ>¶Mâ>Ω∫ò>‘∂4>Îò?K®?*≠?%O∏?<@?T@ü?kÈ¶?ØÕ|?ÈŸ◊=å”¬=}˛ö=i£Ç=[Ac=Q=Gˆ˘=By==Í+=?(ñ=?;k=BPÜ=q{A=ù7∏=≠K1<ÆÛp@7/ö£&.@8º√.£á¶@8mÊn£á¶@84DN£á¶@8F.£á¶@7ﬂÃŒ£á¶@7º3£á¶@7°±N£á¶@7{sN£á¶@7ab.£á¶@7O/é£á¶@7H`n£á¶@7+a£á¶@7Kãé£á¶@˛˙UA)PíAPSÌAwólAç'¨A†qíA∞oA àAﬁq‰AÌAÛb…B'A†É?4ù?TY˙?r6F?áæø?ñSÙ?¶Cy?µcK?“÷˘?ÒÖ@nt@∂Å@b‡@ñÓ=ƒaô=ÆW`=°û=òl˚=î
+û=êÊ=é‹ =êµ⁄=ñõc=ûâ´=¨(6=Ë¥v>.a£>m◊K=ÏÕÏ@7NÑN£á¶  8Bì-@˚A≤´≈= äAf÷ËAñ€A∏ƒA⁄ÛÔA¸7nBÎÈB"<ßBA)zBZ∏^BpªÄBÇ5B¶ÓNBØ;·?˜?-?EL ?] ˛?tÚù?áÉ¢?ìÍí?¨'?ƒ∆r?›/Ô?ˆh@86Ù@v&*=1 =w≤=oÅ=c∂= x=¸
+<˝yΩ<˜∏æ<˙"<ˇqö=T-=fî=CCR@8Â°XF@7—z!XF@7ôAXF@7iÓ°XF@7BüXF@7¯·XF@6¸öXF@6ÃÅXF@6©ëÅXF@6éÍAXF@6y!XF@64¡XF@6&Ö¡XFBΩE@¶7Ç@6!XF=t'd=´T@sÿ=_øG¿Pæ®CcAFQ.EDC˝@sÿ=%¨aC¿Pæ®ÛÒ.  ?≠Q≤>Ö‡n=Û˝—@T¯B,Ë @<ÿD?8°+@<ÀI8°+@<uü8°+@<*–?8°+@<¨ˇ8°+@<Mú?8°+@<Zsˇ8°+@X¿Û'Œ(K@X¿Û'Œ(K@X¿Û'Œ(K@X¿Û'Œ(K@X¿Û'Œ(K@X¿Û'Œ(K>=œo>F‚S>áîﬂ>±#2>ªa>úK>ï<fª!@$ø"¢øo)∞ø}∆Åø¸™ ¿a˙>ûÁµ>ªYt>’πr>Ôï?û)?ô¢?d?:Ú?T… ?o}?ÑÔ?≈rc@_≠?Ëø¿@Ú+?€ /?ºÈ?≈*@c@˙AB∆  B∆  B∆  B∆  B∆  B∆  B∆  <rJﬁ@X¿Û'Œ(K@<?!Ï5∏ì@;ÏßÃ5∏ì@;†Yå5∏ì@;HªÏ5∏ì@;‰L5∏ì@:Êl¨5∏ì@:Í^l5∏ì@;Ï5∏ì@;ÂÏ5∏ì@;2å5∏ì@:Ì∫L5∏ì@:ç å5∏ì@Xª+n%>óDÅ>ÀÜ9?È?7àb?_ê∫?Ç¥w?Ä‹¯?aÕZ?UXB?mgñ?~°x?¥N“øß˜>ãıπ>§À|>ª⁄•>“å7>È]c?,˚??$'?;}Ê?R¶‹?j√?ÆuÕ?ËCV?Äù‡?az?Cd?x?‡?	a≤?%≠?I˚8?tSÇ?vØÕ?óÜ?ÜÏB∆  B∆  <®0i@Xª+n%@:5¡”WŸw@9Ìf”WŸw@9∂™ÛWŸw@9âDsWŸw@9dﬂ3WŸw@9BiWŸw@9(é≥WŸw@8˝Ê3WŸw@8›ÉìWŸw@8Ã:WŸw@8Ω ≥WŸw@8q3WŸw@8P¨≥WŸw?ˇ˛8@&=@J2Ç@n'@á∞Ù@ôö.@®ì8@ƒâÆ@‹”=@Í˛Ê@¯9ﬂA#"vA7CÌ>dªw>Ü˚¢>ö≈>¨∆ë>øy
+>”ÂO>Á9√?i[?¨g?,∏ﬁ?@%Ó?èo?ø‰h=¯h˜=·˛:=”÷=…√=ƒ'0=ø√G=æ´á=æ"Z=¡y=ÃWï=◊5H=ıMç>ç2>äªÂ™@8€”WŸw@9VT#&.@9¿c&.@8œÁ#&.@8ûv#&.@8t”É&.@8LoÉ&.@8+⁄C&.@7˚Ò£&.@7ÿ†£&.@7∏d√&.@7üvÉ&.@7lÛc&.@7g#&.@ã1v@∂Î@·ƒA€˚A¶ÍA5'6AKØAqˇŒAâdƒAöIØA®ƒ.A fÑAŒ√È>çÀ>¶Mâ>Ω∫ò>‘∂4>Îò?K®?*≠?%O∏?<@?T@ü?kÈ¶?ØÕ|?ÈŸ◊=å”¬=}˛ö=i£Ç=[Ac=Q=Gˆ˘=By==Í+=?(ñ=?;k=BPÜ=q{A=ù7∏=≠K1<ÆÛp@7/ö£&.@8º√.£á¶@8mÊn£á¶@84DN£á¶@8F.£á¶@7ﬂÃŒ£á¶@7º3£á¶@7°±N£á¶@7{sN£á¶@7ab.£á¶@7O/é£á¶@7H`n£á¶@7+a£á¶@7Kãé£á¶@˛˙UA)PíAPSÌAwólAç'¨A†qíA∞oA àAﬁq‰AÌAÛb…B'A†É?4ù?TY˙?r6F?áæø?ñSÙ?¶Cy?µcK?“÷˘?ÒÖ@nt@∂Å@b‡@ñÓ=ƒaô=ÆW`=°û=òl˚=î
+û=êÊ=é‹ =êµ⁄=ñõc=ûâ´=¨(6=Ë¥v>.a£>m◊K=ÏÕÏ@7NÑN£á¶        @sÿ?é¶ ë¿Pæ©ŸÇΩµAá©¸=¬è\AÁm>%„TAB˘€øÄ  A7L?	˚Ánnnn  8Bì-@˚A≤´≈= äAf÷ËAñ€A∏ƒA⁄ÛÔA¸7nBÎÈB"<ßBA)zBZ∏^BpªÄBÇ5B¶ÓNBØ;·?˜?-?EL ?] ˛?tÚù?áÉ¢?ìÍí?¨'?ƒ∆r?›/Ô?ˆh@86Ù@v&*=1 =w≤=oÅ=c∂= x=¸
+<˝yΩ<˜∏æ<˙"<ˇqö=T-=fî=CCR@8} *{î@7”J*{î@7ö∂j*{î@7kÜ *{î@7D7**{î@7ë
+*{î@6˛2**{î@6Õ≥™*{î@6´)™*{î@6êÇj*{î@6z™J*{î@65õÍ*{î@6(Í*{îBΩE@¶7Ç@6≥J*{î=t'd=´T@sÿ=_øG¿Pæ®CcAFQ.EDC˝@sÿ=%¨aC¿Pæ®ÛÒ.  ?≠Q≤>Ö‡n=Û˝—@T¯B,Ë @<ÿD?8°+@<ÀI8°+@<uü8°+@<*–?8°+@<¨ˇ8°+@<Mú?8°+@<Zsˇ8°+@X¿Û'Œ(K@X¿Û'Œ(K@X¿Û'Œ(K@X¿Û'Œ(K@X¿Û'Œ(K@X¿Û'Œ(K>=œo>F‚S>áîﬂ>±#2>ªa>úK>ï<fª!@$ø"¢øo)∞ø}∆Åø¸™ ¿a˙>ûÁµ>ªYt>’πr>Ôï?û)?ô¢?d?:Ú?T… ?o}?ÑÔ?≈rc@_≠?Ëø¿@Ú+?€ /?ºÈ?≈*@c@˙AB∆  B∆  B∆  B∆  B∆  B∆  B∆  <rJﬁ@X¿Û'Œ(K@<?!Ï5∏ì@;ÏßÃ5∏ì@;†Yå5∏ì@;HªÏ5∏ì@;‰L5∏ì@:Êl¨5∏ì@:Í^l5∏ì@;Ï5∏ì@;ÂÏ5∏ì@;2å5∏ì@:Ì∫L5∏ì@:ç å5∏ì@Xª+n%>óDÅ>ÀÜ9?È?7àb?_ê∫?Ç¥w?Ä‹¯?aÕZ?UXB?mgñ?~°x?¥N“øß˜>ãıπ>§À|>ª⁄•>“å7>È]c?,˚??$'?;}Ê?R¶‹?j√?ÆuÕ?ËCV?Äù‡?az?Cd?x?‡?	a≤?%≠?I˚8?tSÇ?vØÕ?óÜ?ÜÏB∆  B∆  <®0i@Xª+n%@:5¡”WŸw@9Ìf”WŸw@9∂™ÛWŸw@9âDsWŸw@9dﬂ3WŸw@9BiWŸw@9(é≥WŸw@8˝Ê3WŸw@8›ÉìWŸw@8Ã:WŸw@8Ω ≥WŸw@8q3WŸw@8P¨≥WŸw?ˇ˛8@&=@J2Ç@n'@á∞Ù@ôö.@®ì8@ƒâÆ@‹”=@Í˛Ê@¯9ﬂA#"vA7CÌ>dªw>Ü˚¢>ö≈>¨∆ë>øy
+>”ÂO>Á9√?i[?¨g?,∏ﬁ?@%Ó?èo?ø‰h=¯h˜=·˛:=”÷=…√=ƒ'0=ø√G=æ´á=æ"Z=¡y=ÃWï=◊5H=ıMç>ç2>äªÂ™@8€”WŸw@9VT#&.@9¿c&.@8œÁ#&.@8ûv#&.@8t”É&.@8LoÉ&.@8+⁄C&.@7˚Ò£&.@7ÿ†£&.@7∏d√&.@7üvÉ&.@7lÛc&.@7g#&.@ã1v@∂Î@·ƒA€˚A¶ÍA5'6AKØAqˇŒAâdƒAöIØA®ƒ.A fÑAŒ√È>çÀ>¶Mâ>Ω∫ò>‘∂4>Îò?K®?*≠?%O∏?<@?T@ü?kÈ¶?ØÕ|?ÈŸ◊=å”¬=}˛ö=i£Ç=[Ac=Q=Gˆ˘=By==Í+=?(ñ=?;k=BPÜ=q{A=ù7∏=≠K1<ÆÛp@7/ö£&.@8º√.£á¶@8mÊn£á¶@84DN£á¶@8F.£á¶@7ﬂÃŒ£á¶@7º3£á¶@7°±N£á¶@7{sN£á¶@7ab.£á¶@7O/é£á¶@7H`n£á¶@7+a£á¶@7Kãé£á¶@˛˙UA)PíAPSÌAwólAç'¨A†qíA∞oA àAﬁq‰AÌAÛb…B'A†É?4ù?TY˙?r6F?áæø?ñSÙ?¶Cy?µcK?“÷˘?ÒÖ@nt@∂Å@b‡@ñÓ=ƒaô=ÆW`=°û=òl˚=î
+û=êÊ=é‹ =êµ⁄=ñõc=ûâ´=¨(6=Ë¥v>.a£>m◊K=ÏÕÏ@7NÑN£á¶  8?ı¿ÎÌ˙C˛?Ûﬁ —∑Y?ˆ‚e+”√?±â7?¢#:?∑¡æ@ºÈd       DœÉ3 ¬«ÃÕNnk(ˇù@àı√> •a  ~Aóò  ¿X¿     A æwAƒ‘˛Aµ5?AÆ;dA®Ám?€"—?Co?∫^5?|Ìë=ix’=° ¡A∆CñAøÛ∂Aµ&ÈA≠ÃÕA©&È¿7§lvJﬂ¯¿8p˘±1e‘¿8ŒFIêl ¿9#|ôÆíO¿9H£◊
+=q                …!C©B[?ÊîA•hä;Ω^+BxπBWıBààXB¶V¯B≈dJBÂ◊jC<TC¥ˆC:ØËCRµQCgìCó†C©âı>løw>ë{>Ø7Ö>Ã{e>ÈOÇ?j?∂≤?5}ê?SG ?lVΩ?Ç58?øñf@ Ê;Œ^?;ªIÅ;≤d∆;™‚;§Mã;°`™;üÃH;ù˜‰;ùQ~;õÍº;úR;Ø•";”_Y@7˘j*{î@6Æ≤**{î@6m{**{î@66òJ*{î@6ä*{î@5‹∑Í*{î@5πÚ**{î@5Å?
+*{î@5U‹**{î@547ä*{î@5¯™*{î@4œJ*{î@4Ø˚J*{îCÆ∆C@D∫@4ßá**{î;Î⁄Bær@s·HÁÈ5Ñ¿PíkÒCoF à¯FAî@s·Hº1¯ñ¿Pí»„Œ ?ôxa>)ÒÙ<≤~’@t’∂CÄt}@8ùˇ8°+@8Hƒ_8°+@8eø8°+@7Ãbü8°+@7ö∏?8°+@7mÛ8°+@7H-ˇ8°+@7	8°+@6◊Œü8°+@6±wﬂ8°+@6ìÎü8°+@6A’ü8°+@6$-ˇ8°+AèAE‹A|!Aö√ˇAπnAŸbQA˘‘B9\B:çBV$_Bn)0Bü˛ B≤£=÷¨> #>oÕ>*C >>ﬂ5>V í>mÄ®>éÜ>¶jò>æ	K>’˜3? ›◊?T\¬<LGa<4ó<$«´<ÌB<b±<ÿq<ì?;¸øé;¯b;ˆ∏R;˘≈ì<ƒk<%÷L<6≠ôΩ|Àƒ@6gﬂ8°+@9ar5∏ì@8Ù-Ã5∏ì@8é«Ã5∏ì@8;‹å5∏ì@7¯ô,5∏ì@7∑,5∏ì@7Éñå5∏ì@70ÛL5∏ì@6Ú˘¨5∏ì@6œ	Ï5∏ì@6∏íÏ5∏ì@6A–L5∏ì@6	õ,5∏ì@Ñp@ƒ8AMA>j’ArçWAôvÜA∏¬A¯∫|Bm¿B0·¶B?≈qBíˇÒB≥Ò˚=íTÛ>F¿u>ºê[?Óå?(?m?]Gí?çbH? Q @@`¯@4¡±@|c@ò.|<ôóf=Õg=9ÄÚ=BŒ=@ÿı=Ho”=Tøã=b#î=n=zÅÖ=É=n™a=k˝=ÇÆΩl(@6[l5∏ì@8†zÛWŸw@81
+3WŸw@7ÿ≈3WŸw@7çÂsWŸw@7M8≥WŸw@7æsWŸw@6„ü”WŸw@6ñ_ìWŸw@6^◊SWŸw@66 WŸw@6ˇ”WŸw@5¢B3WŸw@5M„3WŸwA	ÜäAM[]AçA∏™ÎAÈEBœ-B*`áB`˜(Bâ[∞BüB¥sMC[ºC7]=?3|◊?¶*?≥Lá?‰ÌË@
++ø@)–ñ@K|q@áôb@©ºS@» @‚⁄A*°A5√î=µl%=≠=∞±,=¨Sk=§‘Û=§%0=¶j=ßì^=´∆==Æ“Û=Æê=ùKﬁ=âÀ|=è^‘º∂Gí@5:1ÛWŸw@8îªÉ&.@87	£&.@7»†£&.@7g≤C&.@7æ„&.@6–Q#&.@6£=&.@6f!√&.@6BÒ„&.@60$&.@6##&.@5JÔc&.@4·d&.A©∆AC¶~Aëà›AŒCWB
+B1ÀπBQÈBÇB+Bì÷zBû/ÑB´7ôC4i˝CÉﬂU?(j–@%Z7@•åB@Ï∏ÎA!A>EA`]Aè$A®»∂Aº‡çAÕ	BgBh=ß†é>jˆå>ûØ>üâ>ó∞œ>îík>îÌ◊>òÆW>û¥>•˙â>¶v⁄>Kv>"X”>‚dΩè„˙@4∞Ù#&.@8UŒ£á¶@7ÓÆ£á¶@7íFÆ£á¶@7E`é£á¶@7ÑÆ£á¶@6«ÎÆ£á¶@6òFé£á¶@6Gî.£á¶@6¥Æ£á¶@5ÀÙ.£á¶@5£b£á¶@5)é.£á¶@4Â€Œ£á¶A9+®AÜûA∫êQAˆ‘BX
+BA/ÍBeO^BôGaB≈XBÔ"ÙC
+[˙CVwÚCàŒΩ=∏˙>_>ñ>–ñü?¨Â?9}µ?qà≠?òG~?÷ñ@K¯@¿@1&û@mó¥@è‚†<
+’ˇ<gx<õk!<•ø$<•¸!<≠À¬<∏ü≠<¬õ<¿Cq<∏èw<±˚@<ô˛Ú<í3<ò$ æ≤<ﬁ@4–n£á¶ …!C©B[?ÊîA•hä;Ω^+BxπBWıBààXB¶V¯B≈dJBÂ◊jC<TC¥ˆC:ØËCRµQCgìCó†C©âı>løw>ë{>Ø7Ö>Ã{e>ÈOÇ?j?∂≤?5}ê?SG ?lVΩ?Ç58?øñf@ Ê;Œ^?;ªIÅ;≤d∆;™‚;§Mã;°`™;üÃH;ù˜‰;ùQ~;õÍº;úR;Ø•";”_Y@7aAXF@6≠XF@6k„XF@65 !XF@6maXF@5€¡XF@5∏ZXF@5¶·XF@5TDXF@52üaXF@5`ÅXF@4Õm!XF@4Æc!XFCÆ∆C@D∫@4•ÔXF;Î⁄Bær@s·HÁÈ5Ñ¿PíkÒCoF à¯FAî@s·Hº1¯ñ¿Pí»„Œ ?ôxa>)ÒÙ<≤~’@t’∂CÄt}@8ùˇ8°+@8Hƒ_8°+@8eø8°+@7Ãbü8°+@7ö∏?8°+@7mÛ8°+@7H-ˇ8°+@7	8°+@6◊Œü8°+@6±wﬂ8°+@6ìÎü8°+@6A’ü8°+@6$-ˇ8°+AèAE‹A|!Aö√ˇAπnAŸbQA˘‘B9\B:çBV$_Bn)0Bü˛ B≤£=÷¨> #>oÕ>*C >>ﬂ5>V í>mÄ®>éÜ>¶jò>æ	K>’˜3? ›◊?T\¬<LGa<4ó<$«´<ÌB<b±<ÿq<ì?;¸øé;¯b;ˆ∏R;˘≈ì<ƒk<%÷L<6≠ôΩ|Àƒ@6gﬂ8°+@9ar5∏ì@8Ù-Ã5∏ì@8é«Ã5∏ì@8;‹å5∏ì@7¯ô,5∏ì@7∑,5∏ì@7Éñå5∏ì@70ÛL5∏ì@6Ú˘¨5∏ì@6œ	Ï5∏ì@6∏íÏ5∏ì@6A–L5∏ì@6	õ,5∏ì@Ñp@ƒ8AMA>j’ArçWAôvÜA∏¬A¯∫|Bm¿B0·¶B?≈qBíˇÒB≥Ò˚=íTÛ>F¿u>ºê[?Óå?(?m?]Gí?çbH? Q @@`¯@4¡±@|c@ò.|<ôóf=Õg=9ÄÚ=BŒ=@ÿı=Ho”=Tøã=b#î=n=zÅÖ=É=n™a=k˝=ÇÆΩl(@6[l5∏ì@8†zÛWŸw@81
+3WŸw@7ÿ≈3WŸw@7çÂsWŸw@7M8≥WŸw@7æsWŸw@6„ü”WŸw@6ñ_ìWŸw@6^◊SWŸw@66 WŸw@6ˇ”WŸw@5¢B3WŸw@5M„3WŸwA	ÜäAM[]AçA∏™ÎAÈEBœ-B*`áB`˜(Bâ[∞BüB¥sMC[ºC7]=?3|◊?¶*?≥Lá?‰ÌË@
++ø@)–ñ@K|q@áôb@©ºS@» @‚⁄A*°A5√î=µl%=≠=∞±,=¨Sk=§‘Û=§%0=¶j=ßì^=´∆==Æ“Û=Æê=ùKﬁ=âÀ|=è^‘º∂Gí@5:1ÛWŸw@8îªÉ&.@87	£&.@7»†£&.@7g≤C&.@7æ„&.@6–Q#&.@6£=&.@6f!√&.@6BÒ„&.@60$&.@6##&.@5JÔc&.@4·d&.A©∆AC¶~Aëà›AŒCWB
+B1ÀπBQÈBÇB+Bì÷zBû/ÑB´7ôC4i˝CÉﬂU?(j–@%Z7@•åB@Ï∏ÎA!A>EA`]Aè$A®»∂Aº‡çAÕ	BgBh=ß†é>jˆå>ûØ>üâ>ó∞œ>îík>îÌ◊>òÆW>û¥>•˙â>¶v⁄>Kv>"X”>‚dΩè„˙@4∞Ù#&.@8UŒ£á¶@7ÓÆ£á¶@7íFÆ£á¶@7E`é£á¶@7ÑÆ£á¶@6«ÎÆ£á¶@6òFé£á¶@6Gî.£á¶@6¥Æ£á¶@5ÀÙ.£á¶@5£b£á¶@5)é.£á¶@4Â€Œ£á¶A9+®AÜûA∫êQAˆ‘BX
+BA/ÍBeO^BôGaB≈XBÔ"ÙC
+[˙CVwÚCàŒΩ=∏˙>_>ñ>–ñü?¨Â?9}µ?qà≠?òG~?÷ñ@K¯@¿@1&û@mó¥@è‚†<
+’ˇ<gx<õk!<•ø$<•¸!<≠À¬<∏ü≠<¬õ<¿Cq<∏èw<±˚@<ô˛Ú<í3<ò$ æ≤<ﬁ@4–n£á¶        @s·H^©√¿Pí¬ŒFJAâ?}=Ò©¸AÅ^5>&ÈyA:‘˛øÄ  A˚ÁøÄ  nnnn …!C©B[?ÊîA•hä;Ω^+BxπBWıBààXB¶V¯B≈dJBÂ◊jC<TC¥ˆC:ØËCRµQCgìCó†C©âı>løw>ë{>Ø7Ö>Ã{e>ÈOÇ?j?∂≤?5}ê?SG ?lVΩ?Ç58?øñf@ Ê;Œ^?;ªIÅ;≤d∆;™‚;§Mã;°`™;üÃH;ù˜‰;ùQ~;õÍº;úR;Ø•";”_Y@7˘j*{î@6Æ≤**{î@6m{**{î@66òJ*{î@6ä*{î@5‹∑Í*{î@5πÚ**{î@5Å?
+*{î@5U‹**{î@547ä*{î@5¯™*{î@4œJ*{î@4Ø˚J*{îCÆ∆C@D∫@4ßá**{î;Î⁄Bær@s·HÁÈ5Ñ¿PíkÒCoF à¯FAî@s·Hº1¯ñ¿Pí»„Œ ?ôxa>)ÒÙ<≤~’@t’∂CÄt}@8ùˇ8°+@8Hƒ_8°+@8eø8°+@7Ãbü8°+@7ö∏?8°+@7mÛ8°+@7H-ˇ8°+@7	8°+@6◊Œü8°+@6±wﬂ8°+@6ìÎü8°+@6A’ü8°+@6$-ˇ8°+AèAE‹A|!Aö√ˇAπnAŸbQA˘‘B9\B:çBV$_Bn)0Bü˛ B≤£=÷¨> #>oÕ>*C >>ﬂ5>V í>mÄ®>éÜ>¶jò>æ	K>’˜3? ›◊?T\¬<LGa<4ó<$«´<ÌB<b±<ÿq<ì?;¸øé;¯b;ˆ∏R;˘≈ì<ƒk<%÷L<6≠ôΩ|Àƒ@6gﬂ8°+@9ar5∏ì@8Ù-Ã5∏ì@8é«Ã5∏ì@8;‹å5∏ì@7¯ô,5∏ì@7∑,5∏ì@7Éñå5∏ì@70ÛL5∏ì@6Ú˘¨5∏ì@6œ	Ï5∏ì@6∏íÏ5∏ì@6A–L5∏ì@6	õ,5∏ì@Ñp@ƒ8AMA>j’ArçWAôvÜA∏¬A¯∫|Bm¿B0·¶B?≈qBíˇÒB≥Ò˚=íTÛ>F¿u>ºê[?Óå?(?m?]Gí?çbH? Q @@`¯@4¡±@|c@ò.|<ôóf=Õg=9ÄÚ=BŒ=@ÿı=Ho”=Tøã=b#î=n=zÅÖ=É=n™a=k˝=ÇÆΩl(@6[l5∏ì@8†zÛWŸw@81
+3WŸw@7ÿ≈3WŸw@7çÂsWŸw@7M8≥WŸw@7æsWŸw@6„ü”WŸw@6ñ_ìWŸw@6^◊SWŸw@66 WŸw@6ˇ”WŸw@5¢B3WŸw@5M„3WŸwA	ÜäAM[]AçA∏™ÎAÈEBœ-B*`áB`˜(Bâ[∞BüB¥sMC[ºC7]=?3|◊?¶*?≥Lá?‰ÌË@
++ø@)–ñ@K|q@áôb@©ºS@» @‚⁄A*°A5√î=µl%=≠=∞±,=¨Sk=§‘Û=§%0=¶j=ßì^=´∆==Æ“Û=Æê=ùKﬁ=âÀ|=è^‘º∂Gí@5:1ÛWŸw@8îªÉ&.@87	£&.@7»†£&.@7g≤C&.@7æ„&.@6–Q#&.@6£=&.@6f!√&.@6BÒ„&.@60$&.@6##&.@5JÔc&.@4·d&.A©∆AC¶~Aëà›AŒCWB
+B1ÀπBQÈBÇB+Bì÷zBû/ÑB´7ôC4i˝CÉﬂU?(j–@%Z7@•åB@Ï∏ÎA!A>EA`]Aè$A®»∂Aº‡çAÕ	BgBh=ß†é>jˆå>ûØ>üâ>ó∞œ>îík>îÌ◊>òÆW>û¥>•˙â>¶v⁄>Kv>"X”>‚dΩè„˙@4∞Ù#&.@8UŒ£á¶@7ÓÆ£á¶@7íFÆ£á¶@7E`é£á¶@7ÑÆ£á¶@6«ÎÆ£á¶@6òFé£á¶@6Gî.£á¶@6¥Æ£á¶@5ÀÙ.£á¶@5£b£á¶@5)é.£á¶@4Â€Œ£á¶A9+®AÜûA∫êQAˆ‘BX
+BA/ÍBeO^BôGaB≈XBÔ"ÙC
+[˙CVwÚCàŒΩ=∏˙>_>ñ>–ñü?¨Â?9}µ?qà≠?òG~?÷ñ@K¯@¿@1&û@mó¥@è‚†<
+’ˇ<gx<õk!<•ø$<•¸!<≠À¬<∏ü≠<¬õ<¿Cq<∏èw<±˚@<ô˛Ú<í3<ò$ æ≤<ﬁ@4–n£á¶ …!?ÔÒA [¿?Ôú‡uˆ˝?lÙ!-w?~{?~V?ÄbNCc       DΩ∞§ ¬«ÃÕNnk(ˇù?˙·HBöÂ  ,D'•¢  ¿X¿     Aß?}A¨GÆA¶E¢A¶  A£Ÿ<#◊
+=8QÏ?∂ìtºj>û5?<õ•„Aß£◊A®Û∂A¶1'A•;dA§ëh¿6¶µ'ª¿6¬à&™é¥¿6ï5®Xy>¿6õ∆—·	¿6ôSy˙ó·ˇˇ               	C¿Ú“@	2íA§ED;≈ØyBπ-àBÌ÷kC •C$™C9'vCMí*C_¢ëC1?Cåû˛Cón∏C†HICπöC≈º>Õ>Ò¨?	Nc?N˙?(ºD?9f?Iôø?hŒ6?ÑXg?îñ?£’€?Úz˜@!ò;öóä;ç?¬;Üi%;Åkˆ;}\◊;zº1;züõ;}†;Ç”√;áÓS;é„;µõç;„"–@6∆ä*{î@5”6ä*{î@5°Áj*{î@5x¿
+*{î@5X&Í*{î@5;Í*{î@5#™Í*{î@4˛˙J*{î@4„ˆ**{î@4œ_™*{î@4øñJ*{î@4ñ“J*{î@4Üä*{îC¬Ç<@±–@4âÀ
+*{î;’ˆJºä£Q@sÃ¿ôaW‡¿PèbÜ≈§ôFÜOFK7@sÃ¿z¨ˇD¿PècaΩ¿m  ?âˆ=áí¯?Dz#@&xCC£Ô@9Äs8°+@9+‡ü8°+@8Î§?8°+@8µâ?8°+@8àìü8°+@8^«8°+@8;Î8°+@8Gˇ8°+@7ÿûˇ8°+@7µ9?8°+@7ö0ø8°+@7M˙ø8°+@7!Sü8°+@Ä$@ÆÀ^@‹=ÉA»ﬂAFA6ÀoAO8BA}$∫AîßA®7AπeÀAÛ‚YB1ë>dÀ> ¢ª>7F∫>MfV>bÊ¸>zDÆ>àåz>ûóS>µv>ÀCh>·{?'Ï·?_=ƒ<ˇ~˛<ÁZÔ<’kM<»åﬁ<æQ©<∑3J<Æ,f<©˝<ß¯ã<©Ã<øm6<ÿˆö<”*¯ªæ≈O@7.%ﬂ8°+@8âl5∏ì@89çÃ5∏ì@7˛`5∏ì@7Ãi¨5∏ì@7£XÏ5∏ì@7}âÏ5∏ì@7^:L5∏ì@7->,5∏ì@7§l5∏ì@6ÍiÏ5∏ì@6”∞,5∏ì@6ñÃ5∏ì@6w¶l5∏ìA=@A@DAmê!Aé,)A§Œ˛Aº“ŸA”VÕA¸ÖBJzB JtB-ÚÉBY"¯Br:≥>√F>óÑ>3ÿ8>Iìj>^†á>ui˛>Ö‘q>õT®>±O›>∆¯F>‹∫?$©Ò?[à≈<ÄÈW<d/Ë<Rx<E—<;∆l<4´.<0á<+Q˘<*—Ô<,ç$<0d/<R‘Õ<{˜–<pTõª»F˙@6~˜5∏ì@7ÆŸìWŸw@7_MìWŸw@7#πWŸw@6ÒõsWŸw@6»-”WŸw@6°˝”WŸw@6ÇDìWŸw@6O˚ìWŸw@6)√WŸw@6ÎWŸw@5ıO3WŸw@5∏›ìWŸw@5úÂìWŸwA§âA⁄^∆BIÑB"íB<%BW¡yBq◊`BêÊúB¶B€BπBB» ÓB˘ëÃC	˛®=–À]=ˆ ‰>rc>áO>.'ø>@5L>Q»1>sä>ä˚>õˆÃ>¨˙¬? £C?*Ò±;∞ÛÌ;úô9;êO?;á(;Äª
+;w¨b;q)H;i¢î;he¯;j?;oÅë;èL◊;¨3;£⁄ º‰@5£y3WŸw@7$
+√&.@6’C&.@6ô¸£&.@6h1É&.@6?8#&.@6•&.@5˙Rc&.@5»ô£&.@5¢Í£&.@5ÖÿC&.@5p@&.@55Î√&.@5Ø√&.BçúB.¿◊BX-•BÅKæBï’#B´Ö\Bø˚>BÂñ~Cv=CÙÌCø≤CBïRCUe>(j(>FÅ]>b≤u>~Av>åà≠>õ>©HR>ƒ¨n>‡∏\>¸i˚?—?P˜J?ã,;±ıY;ùÊ—;ë≈ò;à≠Y;Çaë;{`è;u%;n(Æ;mûñ;pe¢;v‰Ç;ïHg;µx¡;´“=ºÄ$Õ@5!ËÉ&.@6€¨Œ£á¶@6èÓ£á¶@6VÅÆ£á¶@6&–Ó£á¶@5ˇ÷Ó£á¶@5‹ƒN£á¶@5øwÆ£á¶@5ëd£á¶@5n˙Æ£á¶@5TﬂÆ£á¶@5Bn£á¶@5≈Œ£á¶@4˝>é£á¶B3ÓÚBm®BëCâB¨tIB∆j>B·•B˙ÕCúëC'ÙC7Ñ°CD`Cjx<C{â!>Ìö¶?•?¯∂?3o≥?F_º?ZÏƒ?oa?äÈ“?û’œ?≤Öû?∆FC@<í@Eé‘<7è»<$D›<<¢Œ<
+˙∞<1Ã<’?<—<( <9?<Z7</ƒ|<Z[<MõÅΩÉhÇ@5 ÌÆ£á¶ 	C¿Ú“@	2íA§ED;≈ØyBπ-àBÌ÷kC •C$™C9'vCMí*C_¢ëC1?Cåû˛Cón∏C†HICπöC≈º>Õ>Ò¨?	Nc?N˙?(ºD?9f?Iôø?hŒ6?ÑXg?îñ?£’€?Úz˜@!ò;öóä;ç?¬;Üi%;Åkˆ;}\◊;zº1;züõ;}†;Ç”√;áÓS;é„;µõç;„"–@6.aXF@5—ûaXF@5†OAXF@5w'·XF@5Vé¡XF@59{¡XF@5"¡XF@4˝b!XF@4‚^XF@4Õ«ÅXF@4Ω˛!XF@4ï:!XF@4ÑÜaXFC¬Ç<@±–@4à2·XF;’ˆJºä£Q@sÃ¿ôaW‡¿PèbÜ≈§ôFÜOFK7@sÃ¿z¨ˇD¿PècaΩ¿m  ?âˆ=áí¯?Dz#@&xCC£Ô@9Äs8°+@9+‡ü8°+@8Î§?8°+@8µâ?8°+@8àìü8°+@8^«8°+@8;Î8°+@8Gˇ8°+@7ÿûˇ8°+@7µ9?8°+@7ö0ø8°+@7M˙ø8°+@7!Sü8°+@Ä$@ÆÀ^@‹=ÉA»ﬂAFA6ÀoAO8BA}$∫AîßA®7AπeÀAÛ‚YB1ë>dÀ> ¢ª>7F∫>MfV>bÊ¸>zDÆ>àåz>ûóS>µv>ÀCh>·{?'Ï·?_=ƒ<ˇ~˛<ÁZÔ<’kM<»åﬁ<æQ©<∑3J<Æ,f<©˝<ß¯ã<©Ã<øm6<ÿˆö<”*¯ªæ≈O@7.%ﬂ8°+@8âl5∏ì@89çÃ5∏ì@7˛`5∏ì@7Ãi¨5∏ì@7£XÏ5∏ì@7}âÏ5∏ì@7^:L5∏ì@7->,5∏ì@7§l5∏ì@6ÍiÏ5∏ì@6”∞,5∏ì@6ñÃ5∏ì@6w¶l5∏ìA=@A@DAmê!Aé,)A§Œ˛Aº“ŸA”VÕA¸ÖBJzB JtB-ÚÉBY"¯Br:≥>√F>óÑ>3ÿ8>Iìj>^†á>ui˛>Ö‘q>õT®>±O›>∆¯F>‹∫?$©Ò?[à≈<ÄÈW<d/Ë<Rx<E—<;∆l<4´.<0á<+Q˘<*—Ô<,ç$<0d/<R‘Õ<{˜–<pTõª»F˙@6~˜5∏ì@7ÆŸìWŸw@7_MìWŸw@7#πWŸw@6ÒõsWŸw@6»-”WŸw@6°˝”WŸw@6ÇDìWŸw@6O˚ìWŸw@6)√WŸw@6ÎWŸw@5ıO3WŸw@5∏›ìWŸw@5úÂìWŸwA§âA⁄^∆BIÑB"íB<%BW¡yBq◊`BêÊúB¶B€BπBB» ÓB˘ëÃC	˛®=–À]=ˆ ‰>rc>áO>.'ø>@5L>Q»1>sä>ä˚>õˆÃ>¨˙¬? £C?*Ò±;∞ÛÌ;úô9;êO?;á(;Äª
+;w¨b;q)H;i¢î;he¯;j?;oÅë;èL◊;¨3;£⁄ º‰@5£y3WŸw@7$
+√&.@6’C&.@6ô¸£&.@6h1É&.@6?8#&.@6•&.@5˙Rc&.@5»ô£&.@5¢Í£&.@5ÖÿC&.@5p@&.@55Î√&.@5Ø√&.BçúB.¿◊BX-•BÅKæBï’#B´Ö\Bø˚>BÂñ~Cv=CÙÌCø≤CBïRCUe>(j(>FÅ]>b≤u>~Av>åà≠>õ>©HR>ƒ¨n>‡∏\>¸i˚?—?P˜J?ã,;±ıY;ùÊ—;ë≈ò;à≠Y;Çaë;{`è;u%;n(Æ;mûñ;pe¢;v‰Ç;ïHg;µx¡;´“=ºÄ$Õ@5!ËÉ&.@6€¨Œ£á¶@6èÓ£á¶@6VÅÆ£á¶@6&–Ó£á¶@5ˇ÷Ó£á¶@5‹ƒN£á¶@5øwÆ£á¶@5ëd£á¶@5n˙Æ£á¶@5TﬂÆ£á¶@5Bn£á¶@5≈Œ£á¶@4˝>é£á¶B3ÓÚBm®BëCâB¨tIB∆j>B·•B˙ÕCúëC'ÙC7Ñ°CD`Cjx<C{â!>Ìö¶?•?¯∂?3o≥?F_º?ZÏƒ?oa?äÈ“?û’œ?≤Öû?∆FC@<í@Eé‘<7è»<$D›<<¢Œ<
+˙∞<1Ã<’?<—<( <9?<Z7</ƒ|<Z[<MõÅΩÉhÇ@5 ÌÆ£á¶        @sÃ¿@aÔﬂ¿PèbŒñ—hAÑƒú=° ¡Aw°À=∆ßA9ù≤>≠ëh@¯˝ÙøÄ  00nn 	C¿Ú“@	2íA§ED;≈ØyBπ-àBÌ÷kC •C$™C9'vCMí*C_¢ëC1?Cåû˛Cón∏C†HICπöC≈º>Õ>Ò¨?	Nc?N˙?(ºD?9f?Iôø?hŒ6?ÑXg?îñ?£’€?Úz˜@!ò;öóä;ç?¬;Üi%;Åkˆ;}\◊;zº1;züõ;}†;Ç”√;áÓS;é„;µõç;„"–@6∆ä*{î@5”6ä*{î@5°Áj*{î@5x¿
+*{î@5X&Í*{î@5;Í*{î@5#™Í*{î@4˛˙J*{î@4„ˆ**{î@4œ_™*{î@4øñJ*{î@4ñ“J*{î@4Üä*{îC¬Ç<@±–@4âÀ
+*{î;’ˆJºä£Q@sÃ¿ôaW‡¿PèbÜ≈§ôFÜOFK7@sÃ¿z¨ˇD¿PècaΩ¿m  ?âˆ=áí¯?Dz#@&xCC£Ô@9Äs8°+@9+‡ü8°+@8Î§?8°+@8µâ?8°+@8àìü8°+@8^«8°+@8;Î8°+@8Gˇ8°+@7ÿûˇ8°+@7µ9?8°+@7ö0ø8°+@7M˙ø8°+@7!Sü8°+@Ä$@ÆÀ^@‹=ÉA»ﬂAFA6ÀoAO8BA}$∫AîßA®7AπeÀAÛ‚YB1ë>dÀ> ¢ª>7F∫>MfV>bÊ¸>zDÆ>àåz>ûóS>µv>ÀCh>·{?'Ï·?_=ƒ<ˇ~˛<ÁZÔ<’kM<»åﬁ<æQ©<∑3J<Æ,f<©˝<ß¯ã<©Ã<øm6<ÿˆö<”*¯ªæ≈O@7.%ﬂ8°+@8âl5∏ì@89çÃ5∏ì@7˛`5∏ì@7Ãi¨5∏ì@7£XÏ5∏ì@7}âÏ5∏ì@7^:L5∏ì@7->,5∏ì@7§l5∏ì@6ÍiÏ5∏ì@6”∞,5∏ì@6ñÃ5∏ì@6w¶l5∏ìA=@A@DAmê!Aé,)A§Œ˛Aº“ŸA”VÕA¸ÖBJzB JtB-ÚÉBY"¯Br:≥>√F>óÑ>3ÿ8>Iìj>^†á>ui˛>Ö‘q>õT®>±O›>∆¯F>‹∫?$©Ò?[à≈<ÄÈW<d/Ë<Rx<E—<;∆l<4´.<0á<+Q˘<*—Ô<,ç$<0d/<R‘Õ<{˜–<pTõª»F˙@6~˜5∏ì@7ÆŸìWŸw@7_MìWŸw@7#πWŸw@6ÒõsWŸw@6»-”WŸw@6°˝”WŸw@6ÇDìWŸw@6O˚ìWŸw@6)√WŸw@6ÎWŸw@5ıO3WŸw@5∏›ìWŸw@5úÂìWŸwA§âA⁄^∆BIÑB"íB<%BW¡yBq◊`BêÊúB¶B€BπBB» ÓB˘ëÃC	˛®=–À]=ˆ ‰>rc>áO>.'ø>@5L>Q»1>sä>ä˚>õˆÃ>¨˙¬? £C?*Ò±;∞ÛÌ;úô9;êO?;á(;Äª
+;w¨b;q)H;i¢î;he¯;j?;oÅë;èL◊;¨3;£⁄ º‰@5£y3WŸw@7$
+√&.@6’C&.@6ô¸£&.@6h1É&.@6?8#&.@6•&.@5˙Rc&.@5»ô£&.@5¢Í£&.@5ÖÿC&.@5p@&.@55Î√&.@5Ø√&.BçúB.¿◊BX-•BÅKæBï’#B´Ö\Bø˚>BÂñ~Cv=CÙÌCø≤CBïRCUe>(j(>FÅ]>b≤u>~Av>åà≠>õ>©HR>ƒ¨n>‡∏\>¸i˚?—?P˜J?ã,;±ıY;ùÊ—;ë≈ò;à≠Y;Çaë;{`è;u%;n(Æ;mûñ;pe¢;v‰Ç;ïHg;µx¡;´“=ºÄ$Õ@5!ËÉ&.@6€¨Œ£á¶@6èÓ£á¶@6VÅÆ£á¶@6&–Ó£á¶@5ˇ÷Ó£á¶@5‹ƒN£á¶@5øwÆ£á¶@5ëd£á¶@5n˙Æ£á¶@5TﬂÆ£á¶@5Bn£á¶@5≈Œ£á¶@4˝>é£á¶B3ÓÚBm®BëCâB¨tIB∆j>B·•B˙ÕCúëC'ÙC7Ñ°CD`Cjx<C{â!>Ìö¶?•?¯∂?3o≥?F_º?ZÏƒ?oa?äÈ“?û’œ?≤Öû?∆FC@<í@Eé‘<7è»<$D›<<¢Œ<
+˙∞<1Ã<’?<—<( <9?<Z7</ƒ|<Z[<MõÅΩÉhÇ@5 ÌÆ£á¶ 	?      ?Ô!-w1è≈?oiDg8?|ãD?ä	?Ä	’A<ò_  ?   G?ö ¬«ÃÕNnk(ˇù?«ÆABwö  ﬁC3  ¿X¿     AÆr∞AßƒúA†ù≤AúãDAô˘€<Â`B<T˝Ù?pbM“Ò©¸;Éo<tºA≠ÌëAßÖA†x’Aú|ÓAö&È¿7Ã˜˘¿8Ñà§~œÍ¿8¢£S&¿8Î¯vû¬Œ¿9‹]càf                øqEK–j@[X∞Aëª†:ïö Cﬁx#D D5rD^≤∏DÅÛIDîéZD¶iQDÀVDÎE∆’Eá[E7êÒECø>¯è˘?®¨?"T6?6x‹?H√^?ZÄm?kDò?Ü–?ñf2?¶4ì?µ?¸ıÅ@!œT:õO„:âöΩ:y?≤:cÃD:V¡≠:LuA:DÜò:8SR:1Ÿj:.j:,Ón:?éÇ:e—@4dv
+*{î@4ää*{î@3›
+™*{î@3£Ñ**{î@3xî
+*{î@3Sb *{î@33÷™*{î@2¸#j*{î@2”…ä*{î@2±J*{î@2òs
+*{î@2WË *{î@2Fä*{îEH/’@Aﬂ¨@2?—J*{î:ÜüÕΩ)¡∫@sß<Í5¿Pz¶Ë7&FÈÿ™FÜ À@sß=eæp¿Pzm`ÓÄ  ?ûÍS>G5h<˘rÆ@]J5D„3@79_8°+@6ÈL?8°+@6¶:?8°+@6f¨?8°+@63£ü8°+@6Ñ8°+@5·Œ8°+@5ù ü8°+@5j08°+@5>◊?8°+@5∫8°+@4ƒ3ﬂ8°+@4®Ö_8°+BwB/,dB^˙·Bå"B®`<B≈W‹B‚¯CØÄC-…çCK%Cd—#Cù‚yCÆk>,t)>H*•>c,->Ä3ü>ç‚>õE>®É>¬Îˆ>€»y>ıO∂?™?@‘Î?y'q;∂YB;û◊Y;çü';~X];jEÆ;ZæR;N√;;E‹;/ÃÅ;'‚U;#ûã;)∆›;Fí ;gôtªqé@4üŒ_8°+@6WsÃ5∏ì@6	åå5∏ì@5»MÏ5∏ì@5ä⁄l5∏ì@5Zèl5∏ì@50üå5∏ì@5¿l5∏ì@4ÃzL5∏ì@4úÜ5∏ì@4sé¨5∏ì@4S˜,5∏ì@3¸„¨5∏ì@3·–,5∏ìBá˝WB≥˚~B„ô·CıqC(ÂjCDf¸C_u8CåÃCßObC¡·-CŸ7úDëD#ƒg> ¨^>:•à>S‚Ê>oOz>Ñf£>ê⁄ñ>ú¬e>µu(>ÃVM>„–q>˙‰?3(]?g`;$=T;'≤;i :ÍV:ŸÒ+:Õ:√c:≥&◊:©≈Ñ:£Vß:†\:ß°ç:ƒﬂä:Â<hº7ù@3ÿ`Ã5∏ì@5ˇ7WŸw@5≤°SWŸw@5riWŸw@56ZìWŸw@5üìWŸw@4ﬁ∑sWŸw@4ª†SWŸw@4}ûÛWŸw@4O6SWŸw@4'˝ìWŸw@4	ùìWŸw@3∂≥WŸw@3õäÛWŸwB¡√IBˇ;JC …,CGêÿClèCàƒ¸Cõ,|C¡ÙÅCÂ3CD˜–D5DFœ£DZº1>˛>î>+◊>A∑∫>Vãn>k¯>~ÕÑ>ì¸¢>ß`÷>ªz%>Œ∏?XÜ?FŸ’:∫ìÏ:§Ñ%:îE<:ÜÔ::|°<:nÎÓ:dB:T¸:KÈ:Ezr:C4b:S§:|æ*:î«äºA.∆@3íŒ”WŸw@5™¢#&.@5\Î£&.@5¯„&.@4ﬁùÉ&.@4ÆØÉ&.@4Ñ”#&.@4aC&.@4!ç£&.@3Úq£&.@3 Ú√&.@3¨≤C&.@3Zÿ&.@3@”C&.BˇπwC)CUü√CÖ2CûCmC∑¸ÕC—B=D{£DƒüD3çEDH2çDÜ`dDìê$>8;⁄>VL >s™>â€m>ô Ú>ßˆµ>∂aÿ>‘ëç>Òë?_3?ô?\˛8?ëÊ˝:»K :∞&˝:ûé>:èﬂo:Ücd:}Õó:rN˙:`ª˙:W(è:Qõ∂:Oø|:dú!:âqã:°◊øº”÷ª@37z„&.@5VzÓ£á¶@5	O£á¶@4…Æ£á¶@4åCn£á¶@4]áÆ£á¶@44—Œ£á¶@43Æ£á¶@3‘‡n£á¶@3ßÁ£á¶@3ÇJN£á¶@3e≤£á¶@3ﬂŒ£á¶@3ˆé£á¶C6u‘CpŸÏCóøüCºÿCﬂk¨DT—D|*D6•÷DV∫Du◊ÄDà=pD≤SND¡•ƒ>˛Ù? ?("?>6|?S!Y?gÕ›?{æX?í Q?¶¨J?ªv	?œ~¿@0à@LB:;Aå¢;*ò;ˆ®;	;\w:˘%‡:Ó‰—:ﬂoè:◊Ãt:”˛™:”µ˘:c(;†;-éIΩèÒ÷@2˚±é£á¶ øqEK–j@[X∞Aëª†:ïö Cﬁx#D D5rD^≤∏DÅÛIDîéZD¶iQDÀVDÎE∆’Eá[E7êÒECø>¯è˘?®¨?"T6?6x‹?H√^?ZÄm?kDò?Ü–?ñf2?¶4ì?µ?¸ıÅ@!œT:õO„:âöΩ:y?≤:cÃD:V¡≠:LuA:DÜò:8SR:1Ÿj:.j:,Ón:?éÇ:e—@4b›·XF@4ÚaXF@3€rÅXF@3°ÏXF@3v˚·XF@3Q °XF@32>ÅXF@2˙ãAXF@2“1aXF@2∞X!XF@2ñ⁄·XF@2VP°XF@2DuaXFEH/’@Aﬂ¨@2>9!XF:ÜüÕΩ)¡∫@sß<Í5¿Pz¶Ë7&FÈÿ™FÜ À@sß=eæp¿Pzm`ÓÄ  ?ûÍS>G5h<˘rÆ@]J5D„3@79_8°+@6ÈL?8°+@6¶:?8°+@6f¨?8°+@63£ü8°+@6Ñ8°+@5·Œ8°+@5ù ü8°+@5j08°+@5>◊?8°+@5∫8°+@4ƒ3ﬂ8°+@4®Ö_8°+BwB/,dB^˙·Bå"B®`<B≈W‹B‚¯CØÄC-…çCK%Cd—#Cù‚yCÆk>,t)>H*•>c,->Ä3ü>ç‚>õE>®É>¬Îˆ>€»y>ıO∂?™?@‘Î?y'q;∂YB;û◊Y;çü';~X];jEÆ;ZæR;N√;;E‹;/ÃÅ;'‚U;#ûã;)∆›;Fí ;gôtªqé@4üŒ_8°+@6WsÃ5∏ì@6	åå5∏ì@5»MÏ5∏ì@5ä⁄l5∏ì@5Zèl5∏ì@50üå5∏ì@5¿l5∏ì@4ÃzL5∏ì@4úÜ5∏ì@4sé¨5∏ì@4S˜,5∏ì@3¸„¨5∏ì@3·–,5∏ìBá˝WB≥˚~B„ô·CıqC(ÂjCDf¸C_u8CåÃCßObC¡·-CŸ7úDëD#ƒg> ¨^>:•à>S‚Ê>oOz>Ñf£>ê⁄ñ>ú¬e>µu(>ÃVM>„–q>˙‰?3(]?g`;$=T;'≤;i :ÍV:ŸÒ+:Õ:√c:≥&◊:©≈Ñ:£Vß:†\:ß°ç:ƒﬂä:Â<hº7ù@3ÿ`Ã5∏ì@5ˇ7WŸw@5≤°SWŸw@5riWŸw@56ZìWŸw@5üìWŸw@4ﬁ∑sWŸw@4ª†SWŸw@4}ûÛWŸw@4O6SWŸw@4'˝ìWŸw@4	ùìWŸw@3∂≥WŸw@3õäÛWŸwB¡√IBˇ;JC …,CGêÿClèCàƒ¸Cõ,|C¡ÙÅCÂ3CD˜–D5DFœ£DZº1>˛>î>+◊>A∑∫>Vãn>k¯>~ÕÑ>ì¸¢>ß`÷>ªz%>Œ∏?XÜ?FŸ’:∫ìÏ:§Ñ%:îE<:ÜÔ::|°<:nÎÓ:dB:T¸:KÈ:Ezr:C4b:S§:|æ*:î«äºA.∆@3íŒ”WŸw@5™¢#&.@5\Î£&.@5¯„&.@4ﬁùÉ&.@4ÆØÉ&.@4Ñ”#&.@4aC&.@4!ç£&.@3Úq£&.@3 Ú√&.@3¨≤C&.@3Zÿ&.@3@”C&.BˇπwC)CUü√CÖ2CûCmC∑¸ÕC—B=D{£DƒüD3çEDH2çDÜ`dDìê$>8;⁄>VL >s™>â€m>ô Ú>ßˆµ>∂aÿ>‘ëç>Òë?_3?ô?\˛8?ëÊ˝:»K :∞&˝:ûé>:èﬂo:Ücd:}Õó:rN˙:`ª˙:W(è:Qõ∂:Oø|:dú!:âqã:°◊øº”÷ª@37z„&.@5VzÓ£á¶@5	O£á¶@4…Æ£á¶@4åCn£á¶@4]áÆ£á¶@44—Œ£á¶@43Æ£á¶@3‘‡n£á¶@3ßÁ£á¶@3ÇJN£á¶@3e≤£á¶@3ﬂŒ£á¶@3ˆé£á¶C6u‘CpŸÏCóøüCºÿCﬂk¨DT—D|*D6•÷DV∫Du◊ÄDà=pD≤SND¡•ƒ>˛Ù? ?("?>6|?S!Y?gÕ›?{æX?í Q?¶¨J?ªv	?œ~¿@0à@LB:;Aå¢;*ò;ˆ®;	;\w:˘%‡:Ó‰—:ﬂoè:◊Ãt:”˛™:”µ˘:c(;†;-éIΩèÒ÷@2˚±é£á¶        @sß>.Ù‡¿Pzo1A~˘€=@ÉAs/=ôôöA4·H>¨A^5øÄ  11nn øqEK–j@[X∞Aëª†:ïö Cﬁx#D D5rD^≤∏DÅÛIDîéZD¶iQDÀVDÎE∆’Eá[E7êÒECø>¯è˘?®¨?"T6?6x‹?H√^?ZÄm?kDò?Ü–?ñf2?¶4ì?µ?¸ıÅ@!œT:õO„:âöΩ:y?≤:cÃD:V¡≠:LuA:DÜò:8SR:1Ÿj:.j:,Ón:?éÇ:e—@4dv
+*{î@4ää*{î@3›
+™*{î@3£Ñ**{î@3xî
+*{î@3Sb *{î@33÷™*{î@2¸#j*{î@2”…ä*{î@2±J*{î@2òs
+*{î@2WË *{î@2Fä*{îEH/’@Aﬂ¨@2?—J*{î:ÜüÕΩ)¡∫@sß<Í5¿Pz¶Ë7&FÈÿ™FÜ À@sß=eæp¿Pzm`ÓÄ  ?ûÍS>G5h<˘rÆ@]J5D„3@79_8°+@6ÈL?8°+@6¶:?8°+@6f¨?8°+@63£ü8°+@6Ñ8°+@5·Œ8°+@5ù ü8°+@5j08°+@5>◊?8°+@5∫8°+@4ƒ3ﬂ8°+@4®Ö_8°+BwB/,dB^˙·Bå"B®`<B≈W‹B‚¯CØÄC-…çCK%Cd—#Cù‚yCÆk>,t)>H*•>c,->Ä3ü>ç‚>õE>®É>¬Îˆ>€»y>ıO∂?™?@‘Î?y'q;∂YB;û◊Y;çü';~X];jEÆ;ZæR;N√;;E‹;/ÃÅ;'‚U;#ûã;)∆›;Fí ;gôtªqé@4üŒ_8°+@6WsÃ5∏ì@6	åå5∏ì@5»MÏ5∏ì@5ä⁄l5∏ì@5Zèl5∏ì@50üå5∏ì@5¿l5∏ì@4ÃzL5∏ì@4úÜ5∏ì@4sé¨5∏ì@4S˜,5∏ì@3¸„¨5∏ì@3·–,5∏ìBá˝WB≥˚~B„ô·CıqC(ÂjCDf¸C_u8CåÃCßObC¡·-CŸ7úDëD#ƒg> ¨^>:•à>S‚Ê>oOz>Ñf£>ê⁄ñ>ú¬e>µu(>ÃVM>„–q>˙‰?3(]?g`;$=T;'≤;i :ÍV:ŸÒ+:Õ:√c:≥&◊:©≈Ñ:£Vß:†\:ß°ç:ƒﬂä:Â<hº7ù@3ÿ`Ã5∏ì@5ˇ7WŸw@5≤°SWŸw@5riWŸw@56ZìWŸw@5üìWŸw@4ﬁ∑sWŸw@4ª†SWŸw@4}ûÛWŸw@4O6SWŸw@4'˝ìWŸw@4	ùìWŸw@3∂≥WŸw@3õäÛWŸwB¡√IBˇ;JC …,CGêÿClèCàƒ¸Cõ,|C¡ÙÅCÂ3CD˜–D5DFœ£DZº1>˛>î>+◊>A∑∫>Vãn>k¯>~ÕÑ>ì¸¢>ß`÷>ªz%>Œ∏?XÜ?FŸ’:∫ìÏ:§Ñ%:îE<:ÜÔ::|°<:nÎÓ:dB:T¸:KÈ:Ezr:C4b:S§:|æ*:î«äºA.∆@3íŒ”WŸw@5™¢#&.@5\Î£&.@5¯„&.@4ﬁùÉ&.@4ÆØÉ&.@4Ñ”#&.@4aC&.@4!ç£&.@3Úq£&.@3 Ú√&.@3¨≤C&.@3Zÿ&.@3@”C&.BˇπwC)CUü√CÖ2CûCmC∑¸ÕC—B=D{£DƒüD3çEDH2çDÜ`dDìê$>8;⁄>VL >s™>â€m>ô Ú>ßˆµ>∂aÿ>‘ëç>Òë?_3?ô?\˛8?ëÊ˝:»K :∞&˝:ûé>:èﬂo:Ücd:}Õó:rN˙:`ª˙:W(è:Qõ∂:Oø|:dú!:âqã:°◊øº”÷ª@37z„&.@5VzÓ£á¶@5	O£á¶@4…Æ£á¶@4åCn£á¶@4]áÆ£á¶@44—Œ£á¶@43Æ£á¶@3‘‡n£á¶@3ßÁ£á¶@3ÇJN£á¶@3e≤£á¶@3ﬂŒ£á¶@3ˆé£á¶C6u‘CpŸÏCóøüCºÿCﬂk¨DT—D|*D6•÷DV∫Du◊ÄDà=pD≤SND¡•ƒ>˛Ù? ?("?>6|?S!Y?gÕ›?{æX?í Q?¶¨J?ªv	?œ~¿@0à@LB:;Aå¢;*ò;ˆ®;	;\w:˘%‡:Ó‰—:ﬂoè:◊Ãt:”˛™:”µ˘:c(;†;-éIΩèÒ÷@2˚±é£á¶ øq?‡£◊
+=p§?ﬂä	ﬁ “?·Ç©ì‡ﬂ? oi?Z?%FB æ  >≥33FMΩ3 ¬«ÃÕNnk(ˇù@.{B∏  iDîÏ{  ¿X¿     AúE¢Añ{AìoAêõ¶Açè\;Éo;o?PbM“Ò©¸:Éo;oAúAâAï≤-AììAê~˙Aç†¿7WÑM;¿7–>-b9¿7Ào~=¡¿7˛]9ñ˙É¿8≤ÈÃ∑‘                5TC9Ò∞@+äA™ú√<–∆A/m9AlÁAõEAæõtAÊ‘5B”‹B jBRlûBÉz±Bû≤DB∏«≥Cz@C7˙Á>ÏO’?	Ë?4÷?0ó^?D÷ï?X|?l}7?â⁄q?ùY?∞Îv?ƒÄä@	@Cﬁ=;@ﬁ=!÷Ò=£= …K<Ì•<€ÔA<Ã”<∂"P<¶[ß<ö¯w<ì”å<Ü‰<ì˝S@8i…Í*{î@8I
+*{î@7À**{î@7í *{î@7\ÿJ*{î@7-äj*{î@71
+*{î@6µÈ
+*{î@6wˆ™*{î@6C´j*{î@6_ä*{î@5é
+*{î@5YÎä*{îCRjØ@u*@54ö
+*{î<°ˆôº∏è@sŒçø˜äi¿Puü›V$FÅhÎFèáª@sŒãË„‹I¿PuöA∏  ?˝ûñ>˝òﬁ9£Õ^@∞ç°BëS∞@;	üø8°+@:πb?8°+@:j≈ˇ8°+@:-◊_8°+@9¯Ê?8°+@9…‚ﬂ8°+@9üa8°+@9]-ˇ8°+@90¶8°+@8˛—8°+@8¡úø8°+@8)Mˇ8°+@7Â?8°+?z∞Á?ßK°?›˙¡@
+1±@'0Ω@F }@f∏z@íbK@´—â@ÕéÌA ∞A]í—Aç•
+>w◊>êé√>•æî>πg>ŒdB>„µ>¯Ú?îX?$Î›?9jÁ?N€?ö?›?Ã∂∞>âm◊>p:‘>Oï¡>:*q>+ô>`[>v>	K`>må=˙∆ù=ﬂ£Ê=¡äÃ=»Á&=‘Óª©¸«@7∏	ø8°+@:O÷Ï5∏ì@:¶,5∏ì@9ª˙l5∏ì@9ÑL5∏ì@9O√l5∏ì@9 ‚Ã5∏ì@8˜4¨5∏ì@8µ¢Ã5∏ì@8}@5∏ì@8J5,5∏ì@8P¨5∏ì@7ÖÓå5∏ì@7J±¨5∏ì?‡∞C@NÜ@?>@i–Ö@ç"¸@ß±@¬¯@ıªÀAÄ A4÷°AS∆7A∑4¯A‚π÷>Q˜>sÃu>ãπÃ>õ‘Ù>≠ü¥>æ„Û>–lé>Ú›?
+ïÕ?ﬂ*?-4ã?Å±K?¨≥©>_;=‰É==À◊=πJÖ=´V=û‘˝=ïEt=âbo=Ä ¬=o¢=cb=DŒﬂ=S≈@=`^≤ª‰?@7ãÃ5∏ì@9¯ÕsWŸw@9®›ÛWŸw@9_Y≥WŸw@9%sìWŸw@8ÌÏWŸw@8Ω”WŸw@8éâWŸw@8@>≥WŸw@8*SWŸw@7Œs≥WŸw@7¢≥WŸw@7l”WŸw@6Á+WŸw@a›@T}ï@äiÂ@™x,@–*ô@¯4cA≤ÇABlΩAsºAíd“A´yzBmæB(7È>&>0b">JRg>aÿ\>{…¸>äyh>óL>∞c>…VÁ>‚tq>˚ú‹?<d?{Ô=ÉÕ©=f∆A=K0–=8)Í=(#U=*=]Ê<¸9	<ÊFÜ<◊†<À˘<∑›…<œ|Y<‘|Éºhµ@6ØsWŸw@9dä#&.@9ác&.@8¡*É&.@8Öå&.@8N2c&.@8!C&.@7ì#&.@7°¯√&.@7``É&.@7&b√&.@6ˆc&.@6fú&.@60£&.@ÑAj@¥8ë@ÓAÅáA4SAU˛A|pAß?ÙA”ƒBBr“B=ÏBÇ„Bû?>U˘Ô>y´–>è'>ü C>≤)Ï>√Ú…>÷ö>˘ö%?~[? Lô?2Ë?Ös¡?±¯√=`Ê±=@ìà='.=ïù=	ï?<˛íÃ<Ï
+<œtM<ªM<™—><ü|ƒ<é©I<úUŸ<°ÏºÕ÷Ù@5˚oc&.@9+cŒ£á¶@8‘:£á¶@8Ä€Æ£á¶@8<DŒ£á¶@7˚—.£á¶@7∆$Æ£á¶@7ñÛN£á¶@7KàÓ£á¶@7¢.£á¶@6“Éé£á¶@6†œN£á¶@6€Œ£á¶@5‰3£á¶@´Aµ@ÍVA& AJj\A=çAöŒA∑sÿA¢·BﬂøB9ˆwB^`_B∑MñB€)?`?9öZ?Tò¡?m?Ñ≤?ë(v?ûpæ?∏Ö¿?“pΩ?Ïv@=µ@Cæ@Ç"Ö>]"=‹2Ó=∫‹„=¢–=è◊T=ÇXr=pj=U/á=A„ª=0¡Å=$ =p˜=%'=)HâΩE≥@5≠bÆ£á¶ 5TC9Ò∞@+äA™ú√<–∆A/m9AlÁAõEAæõtAÊ‘5B”‹B jBRlûBÉz±Bû≤DB∏«≥Cz@C7˙Á>ÏO’?	Ë?4÷?0ó^?D÷ï?X|?l}7?â⁄q?ùY?∞Îv?ƒÄä@	@Cﬁ=;@ﬁ=!÷Ò=£= …K<Ì•<€ÔA<Ã”<∂"P<¶[ß<ö¯w<ì”å<Ü‰<ì˝S@8h1¡XF@8∞·XF@7…vXF@7êw°XF@7[@!XF@7+ÚAXF@6ˇò·XF@6¥P·XF@6v^ÅXF@6BAXF@6«aXF@5åÜ·XF@5XSaXFCRjØ@u*@53·XF<°ˆôº∏è@sŒçø˜äi¿Puü›V$FÅhÎFèáª@sŒãË„‹I¿PuöA∏  ?˝ûñ>˝òﬁ9£Õ^@∞ç°BëS∞@;	üø8°+@:πb?8°+@:j≈ˇ8°+@:-◊_8°+@9¯Ê?8°+@9…‚ﬂ8°+@9üa8°+@9]-ˇ8°+@90¶8°+@8˛—8°+@8¡úø8°+@8)Mˇ8°+@7Â?8°+?z∞Á?ßK°?›˙¡@
+1±@'0Ω@F }@f∏z@íbK@´—â@ÕéÌA ∞A]í—Aç•
+>w◊>êé√>•æî>πg>ŒdB>„µ>¯Ú?îX?$Î›?9jÁ?N€?ö?›?Ã∂∞>âm◊>p:‘>Oï¡>:*q>+ô>`[>v>	K`>må=˙∆ù=ﬂ£Ê=¡äÃ=»Á&=‘Óª©¸«@7∏	ø8°+@:O÷Ï5∏ì@:¶,5∏ì@9ª˙l5∏ì@9ÑL5∏ì@9O√l5∏ì@9 ‚Ã5∏ì@8˜4¨5∏ì@8µ¢Ã5∏ì@8}@5∏ì@8J5,5∏ì@8P¨5∏ì@7ÖÓå5∏ì@7J±¨5∏ì?‡∞C@NÜ@?>@i–Ö@ç"¸@ß±@¬¯@ıªÀAÄ A4÷°AS∆7A∑4¯A‚π÷>Q˜>sÃu>ãπÃ>õ‘Ù>≠ü¥>æ„Û>–lé>Ú›?
+ïÕ?ﬂ*?-4ã?Å±K?¨≥©>_;=‰É==À◊=πJÖ=´V=û‘˝=ïEt=âbo=Ä ¬=o¢=cb=DŒﬂ=S≈@=`^≤ª‰?@7ãÃ5∏ì@9¯ÕsWŸw@9®›ÛWŸw@9_Y≥WŸw@9%sìWŸw@8ÌÏWŸw@8Ω”WŸw@8éâWŸw@8@>≥WŸw@8*SWŸw@7Œs≥WŸw@7¢≥WŸw@7l”WŸw@6Á+WŸw@a›@T}ï@äiÂ@™x,@–*ô@¯4cA≤ÇABlΩAsºAíd“A´yzBmæB(7È>&>0b">JRg>aÿ\>{…¸>äyh>óL>∞c>…VÁ>‚tq>˚ú‹?<d?{Ô=ÉÕ©=f∆A=K0–=8)Í=(#U=*=]Ê<¸9	<ÊFÜ<◊†<À˘<∑›…<œ|Y<‘|Éºhµ@6ØsWŸw@9dä#&.@9ác&.@8¡*É&.@8Öå&.@8N2c&.@8!C&.@7ì#&.@7°¯√&.@7``É&.@7&b√&.@6ˆc&.@6fú&.@60£&.@ÑAj@¥8ë@ÓAÅáA4SAU˛A|pAß?ÙA”ƒBBr“B=ÏBÇ„Bû?>U˘Ô>y´–>è'>ü C>≤)Ï>√Ú…>÷ö>˘ö%?~[? Lô?2Ë?Ös¡?±¯√=`Ê±=@ìà='.=ïù=	ï?<˛íÃ<Ï
+<œtM<ªM<™—><ü|ƒ<é©I<úUŸ<°ÏºÕ÷Ù@5˚oc&.@9+cŒ£á¶@8‘:£á¶@8Ä€Æ£á¶@8<DŒ£á¶@7˚—.£á¶@7∆$Æ£á¶@7ñÛN£á¶@7KàÓ£á¶@7¢.£á¶@6“Éé£á¶@6†œN£á¶@6€Œ£á¶@5‰3£á¶@´Aµ@ÍVA& AJj\A=çAöŒA∑sÿA¢·BﬂøB9ˆwB^`_B∑MñB€)?`?9öZ?Tò¡?m?Ñ≤?ë(v?ûpæ?∏Ö¿?“pΩ?Ïv@=µ@Cæ@Ç"Ö>]"=‹2Ó=∫‹„=¢–=è◊T=ÇXr=pj=U/á=A„ª=0¡Å=$ =p˜=%'=)HâΩE≥@5≠bÆ£á¶        @sŒçâˆ‡¿Puö∂–FAåŸ>333AÅÁm>+A@ìøÄ  Aﬂ;øÄ  nnnn 5TC9Ò∞@+äA™ú√<–∆A/m9AlÁAõEAæõtAÊ‘5B”‹B jBRlûBÉz±Bû≤DB∏«≥Cz@C7˙Á>ÏO’?	Ë?4÷?0ó^?D÷ï?X|?l}7?â⁄q?ùY?∞Îv?ƒÄä@	@Cﬁ=;@ﬁ=!÷Ò=£= …K<Ì•<€ÔA<Ã”<∂"P<¶[ß<ö¯w<ì”å<Ü‰<ì˝S@8i…Í*{î@8I
+*{î@7À**{î@7í *{î@7\ÿJ*{î@7-äj*{î@71
+*{î@6µÈ
+*{î@6wˆ™*{î@6C´j*{î@6_ä*{î@5é
+*{î@5YÎä*{îCRjØ@u*@54ö
+*{î<°ˆôº∏è@sŒçø˜äi¿Puü›V$FÅhÎFèáª@sŒãË„‹I¿PuöA∏  ?˝ûñ>˝òﬁ9£Õ^@∞ç°BëS∞@;	üø8°+@:πb?8°+@:j≈ˇ8°+@:-◊_8°+@9¯Ê?8°+@9…‚ﬂ8°+@9üa8°+@9]-ˇ8°+@90¶8°+@8˛—8°+@8¡úø8°+@8)Mˇ8°+@7Â?8°+?z∞Á?ßK°?›˙¡@
+1±@'0Ω@F }@f∏z@íbK@´—â@ÕéÌA ∞A]í—Aç•
+>w◊>êé√>•æî>πg>ŒdB>„µ>¯Ú?îX?$Î›?9jÁ?N€?ö?›?Ã∂∞>âm◊>p:‘>Oï¡>:*q>+ô>`[>v>	K`>må=˙∆ù=ﬂ£Ê=¡äÃ=»Á&=‘Óª©¸«@7∏	ø8°+@:O÷Ï5∏ì@:¶,5∏ì@9ª˙l5∏ì@9ÑL5∏ì@9O√l5∏ì@9 ‚Ã5∏ì@8˜4¨5∏ì@8µ¢Ã5∏ì@8}@5∏ì@8J5,5∏ì@8P¨5∏ì@7ÖÓå5∏ì@7J±¨5∏ì?‡∞C@NÜ@?>@i–Ö@ç"¸@ß±@¬¯@ıªÀAÄ A4÷°AS∆7A∑4¯A‚π÷>Q˜>sÃu>ãπÃ>õ‘Ù>≠ü¥>æ„Û>–lé>Ú›?
+ïÕ?ﬂ*?-4ã?Å±K?¨≥©>_;=‰É==À◊=πJÖ=´V=û‘˝=ïEt=âbo=Ä ¬=o¢=cb=DŒﬂ=S≈@=`^≤ª‰?@7ãÃ5∏ì@9¯ÕsWŸw@9®›ÛWŸw@9_Y≥WŸw@9%sìWŸw@8ÌÏWŸw@8Ω”WŸw@8éâWŸw@8@>≥WŸw@8*SWŸw@7Œs≥WŸw@7¢≥WŸw@7l”WŸw@6Á+WŸw@a›@T}ï@äiÂ@™x,@–*ô@¯4cA≤ÇABlΩAsºAíd“A´yzBmæB(7È>&>0b">JRg>aÿ\>{…¸>äyh>óL>∞c>…VÁ>‚tq>˚ú‹?<d?{Ô=ÉÕ©=f∆A=K0–=8)Í=(#U=*=]Ê<¸9	<ÊFÜ<◊†<À˘<∑›…<œ|Y<‘|Éºhµ@6ØsWŸw@9dä#&.@9ác&.@8¡*É&.@8Öå&.@8N2c&.@8!C&.@7ì#&.@7°¯√&.@7``É&.@7&b√&.@6ˆc&.@6fú&.@60£&.@ÑAj@¥8ë@ÓAÅáA4SAU˛A|pAß?ÙA”ƒBBr“B=ÏBÇ„Bû?>U˘Ô>y´–>è'>ü C>≤)Ï>√Ú…>÷ö>˘ö%?~[? Lô?2Ë?Ös¡?±¯√=`Ê±=@ìà='.=ïù=	ï?<˛íÃ<Ï
+<œtM<ªM<™—><ü|ƒ<é©I<úUŸ<°ÏºÕ÷Ù@5˚oc&.@9+cŒ£á¶@8‘:£á¶@8Ä€Æ£á¶@8<DŒ£á¶@7˚—.£á¶@7∆$Æ£á¶@7ñÛN£á¶@7KàÓ£á¶@7¢.£á¶@6“Éé£á¶@6†œN£á¶@6€Œ£á¶@5‰3£á¶@´Aµ@ÍVA& AJj\A=çAöŒA∑sÿA¢·BﬂøB9ˆwB^`_B∑MñB€)?`?9öZ?Tò¡?m?Ñ≤?ë(v?ûpæ?∏Ö¿?“pΩ?Ïv@=µ@Cæ@Ç"Ö>]"=‹2Ó=∫‹„=¢–=è◊T=ÇXr=pj=U/á=A„ª=0¡Å=$ =p˜=%'=)HâΩE≥@5≠bÆ£á¶ 5T?ˆq≤ïÈ‚?Úüæv»¥9?¯qué"?∏1'?∞ÎÓ?√Õ6@Zq  >ÃÃÕF6ï3 ?Ö∏@®ÎÓ ?û∏R>ÉT;  âAwûÌ  ¿X¿     A∫jAµ∞!A≤z·A≠ƒúA´M”>Oﬂ;= ¿É?©ôôôôôö='Ôû=∫^5A∫{Aµr∞A≤óçA≠≤-A´ëh¿7ÌÂKI¿7ùê¿≠⁄¿7≠_ô√ã¿7ÈLÏA›¿7˛àzçdÿ                É»BõZh?†‰TA≤1∑<èˆ…Aã∂lA¥ÙAﬁﬂWBµB°ÿB-92B@üBcmBÄí˘BéGäBòÔOB´CbB±T@>ƒ)R>‰?›‚?÷?"Ç?2<?Bt¯?b«r?Å%0?ëãÖ?°	´?1Ç@ O≠<√,<∞3<°ˇß<ôÊ<ì™<èä<åU <ä—≥<ã† <é2Œ<í_Ç<¬Ù¡<˚Uﬂ@7Ëfj*{î@7°‹™*{î@7fòJ*{î@76
+
+*{î@7W *{î@6Î˚ *{î@6Œ{
+*{î@6†∫J*{î@6~,ä*{î@6bä*{î@6MÚ *{î@6.| *{î@6$–**{îB´äò@êÚ@6.	J*{î<›T˙Ω˝@s«Õ™Ë·ı¿PqVGX~LFìoèFñb”@s«Õ÷7Q¿PqU∆tŸ7 ?°zÂ>TNÙ<Å@.(vBìeÖ@9ÿé?8°+@9êü8°+@9Sµø8°+@9 ¡_8°+@8Ù9_8°+@8Õ[_8°+@8©É8°+@8puø8°+@8F∂ü8°+@8!?8°+@8Nü8°+@7¿8°+@7ü≤ø8°+@;“©@sMI@óu@µÓA@’ã@ıó‹A≥ A+ákAGS¿AcÜ-A}¡A°¬}Aµ¬ä>Û‘>%”><q>Sµ≠>k{d>Å(X>åÓ>§_„>ª&s>“«>È¸?-|Ú?gM=RR=<≠˝=,ß=!¬‚=J=5r=;Ä=5ƒ=Ñ= ∆œ= =4=0Ê-= èº\>Å@7±+ü8°+@9ï¨å5∏ì@9L6¨5∏ì@9l5∏ì@8ÿEL5∏ì@8´L5∏ì@8ÜD,5∏ì@8drÃ5∏ì@8-§l5∏ì@8ˆ,5∏ì@7ﬂÖl5∏ì@7≈CL5∏ì@7ï-5∏ì@7tƒl5∏ì@[¸@éÛ`@≤Ÿ√@ÿÒñ@ˇ4—A≤TA$ã˝AHiÖAi¨‘AÑ∫Aë‡áA≠mËA¬‡ë>	HF>Ã›>67•>MS∆>dîê>z–D>àŸΩ>ü†ä>µ⁄>ÃÙQ>‚∏÷?)¡?a–]=-·Q=dë=üÓ=êè<˘ü<ÔLù<Á8É<›p&<ÿ[Ï<÷ßd<ÿœ=Ä7=!S=<ºRò@7à6l5∏ì@9c.”WŸw@9‰sWŸw@8◊<SWŸw@8°jÛWŸw@8sösWŸw@8Mt3WŸw@8+Z3WŸw@7ÚÛìWŸw@7«ÁsWŸw@7¶íÛWŸw@7åTSWŸw@7Q¡SWŸw@73í≥WŸw@àÑ•@≥¢@·ﬁπA	A!üñA9f∂AQö2AÄ`„Aï‚6A®˙èAπ∂5AÂGAˇìó=·0>Ïˇ>7e>(
+>;˘>MFÀ>`J>Çª*>îˆ>ßÏ>π”{?
+Ø9?9◊<Â"‹< †·<∑™b<™l©<†€p<ôËÔ<îôÔ<çé1<ä'<ä#à<ãˆ<®*G<…`“<∏©ºü'ı@7HÛWŸw@9<É&.@8∆Ó£&.@8á÷„&.@8PùC&.@8!§É&.@7˙Ä„&.@7◊A£&.@7õ£&.@7lä√&.@7H|£&.@7-Æ„&.@6Òï√&.@6÷Mc&.@≤yU@È+ÂAK]A2s:ASN$AsA…Aä®A´}9A ≤∫AÊ≈˛A˛"ŸBΩGB.>+`«>GpW>cO…>˝>éy’>úh”>™ƒÉ>«[/>„>”? #¥?€≥?S˛‚?çé]={0<ÌÀ∑<◊˝w<«hÂ<ªtÍ<≤¬C<´Ïó<°ò <õ◊ú<ö_<õ0<∫“G<‚*±<œ•7º¯NÊ@6Î;&.@8¥:Æ£á¶@8iÆÆ£á¶@8*.£á¶@7ˆ£á¶@7ÀG£á¶@7ß„Ó£á¶@7Ü√n£á¶@7MÓ£á¶@7ºN£á¶@6˝n£á¶@6Â∑Ó£á¶@6¨MÓ£á¶@6ê*N£á¶Av∑A+ÁUAXíAÇD*Aó¯øA¨õA¬t"AÔLˇB⁄mBé≠B-å3BU^Blû>Òí∏?ã? ,?4iW?HÿÓ?\e?pºœ?åâC?†;œ?¥∫j?»1@ïÈ@G‘=o´=cL=Nã=@ÑÆ=7∂Á=1ì‚=,?=#E÷="p=s»= D±=BË•=kN=T	rΩ∫≠À@6ü·é£á¶ É»BõZh?†‰TA≤1∑<èˆ…Aã∂lA¥ÙAﬁﬂWBµB°ÿB-92B@üBcmBÄí˘BéGäBòÔOB´CbB±T@>ƒ)R>‰?›‚?÷?"Ç?2<?Bt¯?b«r?Å%0?ëãÖ?°	´?1Ç@ O≠<√,<∞3<°ˇß<ôÊ<ì™<èä<åU <ä—≥<ã† <é2Œ<í_Ç<¬Ù¡<˚Uﬂ@7ÊŒAXF@7†DÅXF@7e !XF@74q·XF@7ø°XF@6Íc°XF@6Ã‚·XF@6ü"!XF@6|îaXF@6`maXF@6LZ°XF@6,‰°XF@6#8XFB´äò@êÚ@6,q!XF<›T˙Ω˝@s«Õ™Ë·ı¿PqVGX~LFìoèFñb”@s«Õ÷7Q¿PqU∆tŸ7 ?°zÂ>TNÙ<Å@.(vBìeÖ@9ÿé?8°+@9êü8°+@9Sµø8°+@9 ¡_8°+@8Ù9_8°+@8Õ[_8°+@8©É8°+@8puø8°+@8F∂ü8°+@8!?8°+@8Nü8°+@7¿8°+@7ü≤ø8°+@;“©@sMI@óu@µÓA@’ã@ıó‹A≥ A+ákAGS¿AcÜ-A}¡A°¬}Aµ¬ä>Û‘>%”><q>Sµ≠>k{d>Å(X>åÓ>§_„>ª&s>“«>È¸?-|Ú?gM=RR=<≠˝=,ß=!¬‚=J=5r=;Ä=5ƒ=Ñ= ∆œ= =4=0Ê-= èº\>Å@7±+ü8°+@9ï¨å5∏ì@9L6¨5∏ì@9l5∏ì@8ÿEL5∏ì@8´L5∏ì@8ÜD,5∏ì@8drÃ5∏ì@8-§l5∏ì@8ˆ,5∏ì@7ﬂÖl5∏ì@7≈CL5∏ì@7ï-5∏ì@7tƒl5∏ì@[¸@éÛ`@≤Ÿ√@ÿÒñ@ˇ4—A≤TA$ã˝AHiÖAi¨‘AÑ∫Aë‡áA≠mËA¬‡ë>	HF>Ã›>67•>MS∆>dîê>z–D>àŸΩ>ü†ä>µ⁄>ÃÙQ>‚∏÷?)¡?a–]=-·Q=dë=üÓ=êè<˘ü<ÔLù<Á8É<›p&<ÿ[Ï<÷ßd<ÿœ=Ä7=!S=<ºRò@7à6l5∏ì@9c.”WŸw@9‰sWŸw@8◊<SWŸw@8°jÛWŸw@8sösWŸw@8Mt3WŸw@8+Z3WŸw@7ÚÛìWŸw@7«ÁsWŸw@7¶íÛWŸw@7åTSWŸw@7Q¡SWŸw@73í≥WŸw@àÑ•@≥¢@·ﬁπA	A!üñA9f∂AQö2AÄ`„Aï‚6A®˙èAπ∂5AÂGAˇìó=·0>Ïˇ>7e>(
+>;˘>MFÀ>`J>Çª*>îˆ>ßÏ>π”{?
+Ø9?9◊<Â"‹< †·<∑™b<™l©<†€p<ôËÔ<îôÔ<çé1<ä'<ä#à<ãˆ<®*G<…`“<∏©ºü'ı@7HÛWŸw@9<É&.@8∆Ó£&.@8á÷„&.@8PùC&.@8!§É&.@7˙Ä„&.@7◊A£&.@7õ£&.@7lä√&.@7H|£&.@7-Æ„&.@6Òï√&.@6÷Mc&.@≤yU@È+ÂAK]A2s:ASN$AsA…Aä®A´}9A ≤∫AÊ≈˛A˛"ŸBΩGB.>+`«>GpW>cO…>˝>éy’>úh”>™ƒÉ>«[/>„>”? #¥?€≥?S˛‚?çé]={0<ÌÀ∑<◊˝w<«hÂ<ªtÍ<≤¬C<´Ïó<°ò <õ◊ú<ö_<õ0<∫“G<‚*±<œ•7º¯NÊ@6Î;&.@8¥:Æ£á¶@8iÆÆ£á¶@8*.£á¶@7ˆ£á¶@7ÀG£á¶@7ß„Ó£á¶@7Ü√n£á¶@7MÓ£á¶@7ºN£á¶@6˝n£á¶@6Â∑Ó£á¶@6¨MÓ£á¶@6ê*N£á¶Av∑A+ÁUAXíAÇD*Aó¯øA¨õA¬t"AÔLˇB⁄mBé≠B-å3BU^Blû>Òí∏?ã? ,?4iW?HÿÓ?\e?pºœ?åâC?†;œ?¥∫j?»1@ïÈ@G‘=o´=cL=Nã=@ÑÆ=7∂Á=1ì‚=,?=#E÷="p=s»= D±=BË•=kN=T	rΩ∫≠À@6ü·é£á¶        @s«œ4^¨¿PqYØ—ÍAåI∫>≤-AÉj>XbAE†?`BAVøÄ  nnnn É»BõZh?†‰TA≤1∑<èˆ…Aã∂lA¥ÙAﬁﬂWBµB°ÿB-92B@üBcmBÄí˘BéGäBòÔOB´CbB±T@>ƒ)R>‰?›‚?÷?"Ç?2<?Bt¯?b«r?Å%0?ëãÖ?°	´?1Ç@ O≠<√,<∞3<°ˇß<ôÊ<ì™<èä<åU <ä—≥<ã† <é2Œ<í_Ç<¬Ù¡<˚Uﬂ@7Ëfj*{î@7°‹™*{î@7fòJ*{î@76
+
+*{î@7W *{î@6Î˚ *{î@6Œ{
+*{î@6†∫J*{î@6~,ä*{î@6bä*{î@6MÚ *{î@6.| *{î@6$–**{îB´äò@êÚ@6.	J*{î<›T˙Ω˝@s«Õ™Ë·ı¿PqVGX~LFìoèFñb”@s«Õ÷7Q¿PqU∆tŸ7 ?°zÂ>TNÙ<Å@.(vBìeÖ@9ÿé?8°+@9êü8°+@9Sµø8°+@9 ¡_8°+@8Ù9_8°+@8Õ[_8°+@8©É8°+@8puø8°+@8F∂ü8°+@8!?8°+@8Nü8°+@7¿8°+@7ü≤ø8°+@;“©@sMI@óu@µÓA@’ã@ıó‹A≥ A+ákAGS¿AcÜ-A}¡A°¬}Aµ¬ä>Û‘>%”><q>Sµ≠>k{d>Å(X>åÓ>§_„>ª&s>“«>È¸?-|Ú?gM=RR=<≠˝=,ß=!¬‚=J=5r=;Ä=5ƒ=Ñ= ∆œ= =4=0Ê-= èº\>Å@7±+ü8°+@9ï¨å5∏ì@9L6¨5∏ì@9l5∏ì@8ÿEL5∏ì@8´L5∏ì@8ÜD,5∏ì@8drÃ5∏ì@8-§l5∏ì@8ˆ,5∏ì@7ﬂÖl5∏ì@7≈CL5∏ì@7ï-5∏ì@7tƒl5∏ì@[¸@éÛ`@≤Ÿ√@ÿÒñ@ˇ4—A≤TA$ã˝AHiÖAi¨‘AÑ∫Aë‡áA≠mËA¬‡ë>	HF>Ã›>67•>MS∆>dîê>z–D>àŸΩ>ü†ä>µ⁄>ÃÙQ>‚∏÷?)¡?a–]=-·Q=dë=üÓ=êè<˘ü<ÔLù<Á8É<›p&<ÿ[Ï<÷ßd<ÿœ=Ä7=!S=<ºRò@7à6l5∏ì@9c.”WŸw@9‰sWŸw@8◊<SWŸw@8°jÛWŸw@8sösWŸw@8Mt3WŸw@8+Z3WŸw@7ÚÛìWŸw@7«ÁsWŸw@7¶íÛWŸw@7åTSWŸw@7Q¡SWŸw@73í≥WŸw@àÑ•@≥¢@·ﬁπA	A!üñA9f∂AQö2AÄ`„Aï‚6A®˙èAπ∂5AÂGAˇìó=·0>Ïˇ>7e>(
+>;˘>MFÀ>`J>Çª*>îˆ>ßÏ>π”{?
+Ø9?9◊<Â"‹< †·<∑™b<™l©<†€p<ôËÔ<îôÔ<çé1<ä'<ä#à<ãˆ<®*G<…`“<∏©ºü'ı@7HÛWŸw@9<É&.@8∆Ó£&.@8á÷„&.@8PùC&.@8!§É&.@7˙Ä„&.@7◊A£&.@7õ£&.@7lä√&.@7H|£&.@7-Æ„&.@6Òï√&.@6÷Mc&.@≤yU@È+ÂAK]A2s:ASN$AsA…Aä®A´}9A ≤∫AÊ≈˛A˛"ŸBΩGB.>+`«>GpW>cO…>˝>éy’>úh”>™ƒÉ>«[/>„>”? #¥?€≥?S˛‚?çé]={0<ÌÀ∑<◊˝w<«hÂ<ªtÍ<≤¬C<´Ïó<°ò <õ◊ú<ö_<õ0<∫“G<‚*±<œ•7º¯NÊ@6Î;&.@8¥:Æ£á¶@8iÆÆ£á¶@8*.£á¶@7ˆ£á¶@7ÀG£á¶@7ß„Ó£á¶@7Ü√n£á¶@7MÓ£á¶@7ºN£á¶@6˝n£á¶@6Â∑Ó£á¶@6¨MÓ£á¶@6ê*N£á¶Av∑A+ÁUAXíAÇD*Aó¯øA¨õA¬t"AÔLˇB⁄mBé≠B-å3BU^Blû>Òí∏?ã? ,?4iW?HÿÓ?\e?pºœ?åâC?†;œ?¥∫j?»1@ïÈ@G‘=o´=cL=Nã=@ÑÆ=7∂Á=1ì‚=,?=#E÷="p=s»= D±=BË•=kN=T	rΩ∫≠À@6ü·é£á¶ É»?˘° ¿Éo?¯˘rGE8Ô?˙E° ¿É?…˚Á?∆ö‘?“¨⁄@YS§  >Ä  Fú\ ¬«ÃÕNnk(ˇù>ı¬è?≤’(  GC[¶  ¿X¿     A±≤-A∞AâAÆ9XA´˘€A®óç=,1=\)?ñá+I∫<‘˝Ù=LÃÕA±ù≤A∞K«AÆM”A´ÔûA®¨¿7~ F«dÆ¿7Ÿ√Û‡7¿7“£S&¿7˙^›)5¿8‹áTÛ                £DÆØà@8{Aô“;nICãèÈC±E!C€|àDñøDjŸD-˘íD@YDc°2D~ÎgDäÉ∑Dí∆ÀDßX6DÆsq?°`?L»?1ú?F)#?Z€≠?m^?Ä/ı?íÿ˘?§∆≈?∂@ô?«úC@7©@;Dû;~:ı –:‡¯Ã:—UO:≈ß:Ω®«:πGÜ:≥ZC:≥¥®:∂Ê“:Ω•:ÌÓ¡;8ó@4Ê
+*{î@4£ñj*{î@4h6ä*{î@45¡**{î@4	J
+*{î@3Ë$™*{î@3Ã=
+*{î@3ùm™*{î@3}ÙÍ*{î@3f÷™*{î@3VºJ*{î@32H *{î@3&πä*{îD≠zÒ@1Q@3(Fä*{î;˘Ω∞Ï´@s“mâ Ò¿PjTwl3∏Fn“F°‡V@s“mÀÈ¿PjTBhFò ?áæC=i¶ >±¸4@/≤$DZæû@7∆Õø8°+@7~Ïø8°+@7<fﬂ8°+@7Éˇ8°+@6–ÿü8°+@6™4?8°+@6à†8°+@6N]ﬂ8°+@6#‹_8°+@6»ˇ8°+@5Í ﬂ8°+@5∞Äˇ8°+@5û78°+AùÁ±AÃÅìBÁ#Bg—B?H7B[–Bx	ﬂBòbB≤5ÒB»ª.B⁄”¯CÒNCí>I[Y>gQZ>Ñ3∆>î@Ä>§ÉX>≥:û>¬ål>‡Ú˜>˛•ò?Â?Q?ch+?ï"√<1BÄ<;à<wÒ<H;ÔÂ;‚Ø∏;⁄Ø;Ãus;∆°8;ƒÜœ;∆òµ;ÍB
+<ÿ≤<	ÉºTm@5†(8°+@6¢ùl5∏ì@6\q,5∏ì@6&Ï5∏ì@5ÂFÃ5∏ì@5¥5,5∏ì@5éW,5∏ì@5lıL5∏ì@53ùå5∏ì@5
+:¨5∏ì@4ÍÃ5∏ì@4“∑5∏ì@4ò—Ã5∏ì@4ÖÉ¨5∏ìBOâXBÖë˚B®TëBÕVBÙ™–C0WCCBLòCa~ÀC}íCâ¨6C©çˇCµøÙ>D
+>a/>Äi>è∆>üS∆>≠[û>ªÚÒ>ÿ≈…>ÙÆ¿?Ù?î?X3?çiﬁ;ÉX¨;j5°;T_;BÍ;5A;+ÂÕ;%Fc;;÷;bù;m;1?€;XP™;NÈÒºgäU@4àOl5∏ì@6<íWŸw@5ˆ»SWŸw@5∂ÁSWŸw@5ÄãWŸw@5P ìWŸw@5*ÔÛWŸw@5
+\SWŸw@4“õìWŸw@4™äWŸw@4ãò3WŸw@4tÓìWŸw@4>∞sWŸw@4-tsWŸwBõa¸B«ª@B˚VeC–öC5‰åCOÓ˛Ci 6Cé‹	C•-C∏q˜C»3CÛ<˝Df#>˛ü>WÊ>2ﬂ¨>Hµ">^‰F>s1@>ÑDÔ>ôc”>Æ!>¬ãF>÷Êµ?◊?Q5«:ÛS{:Ÿü9:≈‹I:∂í◊:™W4:¢îK:ùJk:ïA(:í∞‡:íû{:ïG°:¥∫o:‡æÏ:÷-ºñ⁄é@4/‰≥WŸw@5„»„&.@5ûÅ&.@5_2#&.@5)&&.@4¯˜„&.@4‘„&.@4≥—&.@4|â√&.@4UD√&.@46¿c&.@4 ÉÉ&.@3ÍC&.@3ÿÉ&.B–28CêΩC'ª CKª¡CrKiCä^üCõ^eCΩé0C⁄RCÛ®D˘œD ÖªD+I>=◊>Yç:>y0∂>ãÙd>õñœ>©ÌY>π
+œ>◊⁄>Ù≤X?˘I?ú?`| ?î∏h:¸tY:‚j®:ŒÑî:æ˚™:≤á:™∂:•éã:ù∂~:õÕ_:úJ:ü∞:¬e‘:Òc‰:Ê+åΩ
+Ô@3⁄ù£&.@5û≈Œ£á¶@5Z†Œ£á¶@5—Ó£á¶@4ÁÛ.£á¶@4∏‰é£á¶@4ï=é£á¶@4vë.£á¶@4A·Æ£á¶@4O.£á¶@4an£á¶@3Ì∞é£á¶@3øàÓ£á¶@3±7£á¶C¨cC3¡˘C`Ü!Cá».C†‘©C∂◊ÑCÃ,ﬁCˆ…»Dø&DüÃD'ÑDE9jDO¶’?§€?c«?,`Ô?A∏y?WtÒ?koï?ÄHÀ?ïJ˜?™ @?æΩO?”\&@+·@P“÷;ÅÍ;hòW;UrÅ;FRæ;:8◊;2˛J;.≠…;(/;(=;*_Ω;/·â;]éC;ã ·;Ñ"Ωø§W@3≥2.£á¶ £DÆØà@8{Aô“;nICãèÈC±E!C€|àDñøDjŸD-˘íD@YDc°2D~ÎgDäÉ∑Dí∆ÀDßX6DÆsq?°`?L»?1ú?F)#?Z€≠?m^?Ä/ı?íÿ˘?§∆≈?∂@ô?«úC@7©@;Dû;~:ı –:‡¯Ã:—UO:≈ß:Ω®«:πGÜ:≥ZC:≥¥®:∂Ê“:Ω•:ÌÓ¡;8ó@4‰w·XF@4°˛AXF@4fûaXF@44)XF@4±·XF@3ÊåÅXF@3 §·XF@3õ’ÅXF@3|\¡XF@3e>ÅXF@3U$!XF@30∞°XF@3%!aXFD≠zÒ@1Q@3&ÆaXF;˘Ω∞Ï´@s“mâ Ò¿PjTwl3∏Fn“F°‡V@s“mÀÈ¿PjTBhFò ?áæC=i¶ >±¸4@/≤$DZæû@7∆Õø8°+@7~Ïø8°+@7<fﬂ8°+@7Éˇ8°+@6–ÿü8°+@6™4?8°+@6à†8°+@6N]ﬂ8°+@6#‹_8°+@6»ˇ8°+@5Í ﬂ8°+@5∞Äˇ8°+@5û78°+AùÁ±AÃÅìBÁ#Bg—B?H7B[–Bx	ﬂBòbB≤5ÒB»ª.B⁄”¯CÒNCí>I[Y>gQZ>Ñ3∆>î@Ä>§ÉX>≥:û>¬ål>‡Ú˜>˛•ò?Â?Q?ch+?ï"√<1BÄ<;à<wÒ<H;ÔÂ;‚Ø∏;⁄Ø;Ãus;∆°8;ƒÜœ;∆òµ;ÍB
+<ÿ≤<	ÉºTm@5†(8°+@6¢ùl5∏ì@6\q,5∏ì@6&Ï5∏ì@5ÂFÃ5∏ì@5¥5,5∏ì@5éW,5∏ì@5lıL5∏ì@53ùå5∏ì@5
+:¨5∏ì@4ÍÃ5∏ì@4“∑5∏ì@4ò—Ã5∏ì@4ÖÉ¨5∏ìBOâXBÖë˚B®TëBÕVBÙ™–C0WCCBLòCa~ÀC}íCâ¨6C©çˇCµøÙ>D
+>a/>Äi>è∆>üS∆>≠[û>ªÚÒ>ÿ≈…>ÙÆ¿?Ù?î?X3?çiﬁ;ÉX¨;j5°;T_;BÍ;5A;+ÂÕ;%Fc;;÷;bù;m;1?€;XP™;NÈÒºgäU@4àOl5∏ì@6<íWŸw@5ˆ»SWŸw@5∂ÁSWŸw@5ÄãWŸw@5P ìWŸw@5*ÔÛWŸw@5
+\SWŸw@4“õìWŸw@4™äWŸw@4ãò3WŸw@4tÓìWŸw@4>∞sWŸw@4-tsWŸwBõa¸B«ª@B˚VeC–öC5‰åCOÓ˛Ci 6Cé‹	C•-C∏q˜C»3CÛ<˝Df#>˛ü>WÊ>2ﬂ¨>Hµ">^‰F>s1@>ÑDÔ>ôc”>Æ!>¬ãF>÷Êµ?◊?Q5«:ÛS{:Ÿü9:≈‹I:∂í◊:™W4:¢îK:ùJk:ïA(:í∞‡:íû{:ïG°:¥∫o:‡æÏ:÷-ºñ⁄é@4/‰≥WŸw@5„»„&.@5ûÅ&.@5_2#&.@5)&&.@4¯˜„&.@4‘„&.@4≥—&.@4|â√&.@4UD√&.@46¿c&.@4 ÉÉ&.@3ÍC&.@3ÿÉ&.B–28CêΩC'ª CKª¡CrKiCä^üCõ^eCΩé0C⁄RCÛ®D˘œD ÖªD+I>=◊>Yç:>y0∂>ãÙd>õñœ>©ÌY>π
+œ>◊⁄>Ù≤X?˘I?ú?`| ?î∏h:¸tY:‚j®:ŒÑî:æ˚™:≤á:™∂:•éã:ù∂~:õÕ_:úJ:ü∞:¬e‘:Òc‰:Ê+åΩ
+Ô@3⁄ù£&.@5û≈Œ£á¶@5Z†Œ£á¶@5—Ó£á¶@4ÁÛ.£á¶@4∏‰é£á¶@4ï=é£á¶@4vë.£á¶@4A·Æ£á¶@4O.£á¶@4an£á¶@3Ì∞é£á¶@3øàÓ£á¶@3±7£á¶C¨cC3¡˘C`Ü!Cá».C†‘©C∂◊ÑCÃ,ﬁCˆ…»Dø&DüÃD'ÑDE9jDO¶’?§€?c«?,`Ô?A∏y?WtÒ?koï?ÄHÀ?ïJ˜?™ @?æΩO?”\&@+·@P“÷;ÅÍ;hòW;UrÅ;FRæ;:8◊;2˛J;.≠…;(/;(=;*_Ω;/·â;]éC;ã ·;Ñ"Ωø§W@3≥2.£á¶        @s“lË`ß
+¿PjUÙ([iAáÌë=‘˝ÙAx’>VA=oøÄ  Av…øÄ  nnnn £DÆØà@8{Aô“;nICãèÈC±E!C€|àDñøDjŸD-˘íD@YDc°2D~ÎgDäÉ∑Dí∆ÀDßX6DÆsq?°`?L»?1ú?F)#?Z€≠?m^?Ä/ı?íÿ˘?§∆≈?∂@ô?«úC@7©@;Dû;~:ı –:‡¯Ã:—UO:≈ß:Ω®«:πGÜ:≥ZC:≥¥®:∂Ê“:Ω•:ÌÓ¡;8ó@4Ê
+*{î@4£ñj*{î@4h6ä*{î@45¡**{î@4	J
+*{î@3Ë$™*{î@3Ã=
+*{î@3ùm™*{î@3}ÙÍ*{î@3f÷™*{î@3VºJ*{î@32H *{î@3&πä*{îD≠zÒ@1Q@3(Fä*{î;˘Ω∞Ï´@s“mâ Ò¿PjTwl3∏Fn“F°‡V@s“mÀÈ¿PjTBhFò ?áæC=i¶ >±¸4@/≤$DZæû@7∆Õø8°+@7~Ïø8°+@7<fﬂ8°+@7Éˇ8°+@6–ÿü8°+@6™4?8°+@6à†8°+@6N]ﬂ8°+@6#‹_8°+@6»ˇ8°+@5Í ﬂ8°+@5∞Äˇ8°+@5û78°+AùÁ±AÃÅìBÁ#Bg—B?H7B[–Bx	ﬂBòbB≤5ÒB»ª.B⁄”¯CÒNCí>I[Y>gQZ>Ñ3∆>î@Ä>§ÉX>≥:û>¬ål>‡Ú˜>˛•ò?Â?Q?ch+?ï"√<1BÄ<;à<wÒ<H;ÔÂ;‚Ø∏;⁄Ø;Ãus;∆°8;ƒÜœ;∆òµ;ÍB
+<ÿ≤<	ÉºTm@5†(8°+@6¢ùl5∏ì@6\q,5∏ì@6&Ï5∏ì@5ÂFÃ5∏ì@5¥5,5∏ì@5éW,5∏ì@5lıL5∏ì@53ùå5∏ì@5
+:¨5∏ì@4ÍÃ5∏ì@4“∑5∏ì@4ò—Ã5∏ì@4ÖÉ¨5∏ìBOâXBÖë˚B®TëBÕVBÙ™–C0WCCBLòCa~ÀC}íCâ¨6C©çˇCµøÙ>D
+>a/>Äi>è∆>üS∆>≠[û>ªÚÒ>ÿ≈…>ÙÆ¿?Ù?î?X3?çiﬁ;ÉX¨;j5°;T_;BÍ;5A;+ÂÕ;%Fc;;÷;bù;m;1?€;XP™;NÈÒºgäU@4àOl5∏ì@6<íWŸw@5ˆ»SWŸw@5∂ÁSWŸw@5ÄãWŸw@5P ìWŸw@5*ÔÛWŸw@5
+\SWŸw@4“õìWŸw@4™äWŸw@4ãò3WŸw@4tÓìWŸw@4>∞sWŸw@4-tsWŸwBõa¸B«ª@B˚VeC–öC5‰åCOÓ˛Ci 6Cé‹	C•-C∏q˜C»3CÛ<˝Df#>˛ü>WÊ>2ﬂ¨>Hµ">^‰F>s1@>ÑDÔ>ôc”>Æ!>¬ãF>÷Êµ?◊?Q5«:ÛS{:Ÿü9:≈‹I:∂í◊:™W4:¢îK:ùJk:ïA(:í∞‡:íû{:ïG°:¥∫o:‡æÏ:÷-ºñ⁄é@4/‰≥WŸw@5„»„&.@5ûÅ&.@5_2#&.@5)&&.@4¯˜„&.@4‘„&.@4≥—&.@4|â√&.@4UD√&.@46¿c&.@4 ÉÉ&.@3ÍC&.@3ÿÉ&.B–28CêΩC'ª CKª¡CrKiCä^üCõ^eCΩé0C⁄RCÛ®D˘œD ÖªD+I>=◊>Yç:>y0∂>ãÙd>õñœ>©ÌY>π
+œ>◊⁄>Ù≤X?˘I?ú?`| ?î∏h:¸tY:‚j®:ŒÑî:æ˚™:≤á:™∂:•éã:ù∂~:õÕ_:úJ:ü∞:¬e‘:Òc‰:Ê+åΩ
+Ô@3⁄ù£&.@5û≈Œ£á¶@5Z†Œ£á¶@5—Ó£á¶@4ÁÛ.£á¶@4∏‰é£á¶@4ï=é£á¶@4vë.£á¶@4A·Æ£á¶@4O.£á¶@4an£á¶@3Ì∞é£á¶@3øàÓ£á¶@3±7£á¶C¨cC3¡˘C`Ü!Cá».C†‘©C∂◊ÑCÃ,ﬁCˆ…»Dø&DüÃD'ÑDE9jDO¶’?§€?c«?,`Ô?A∏y?WtÒ?koï?ÄHÀ?ïJ˜?™ @?æΩO?”\&@+·@P“÷;ÅÍ;hòW;UrÅ;FRæ;:8◊;2˛J;.≠…;(/;(=;*_Ω;/·â;]éC;ã ·;Ñ"Ωø§W@3≥2.£á¶ £?ﬁ∏QÎÖ∏?‹˙¨ŸË>B?‡:˚~êˇó>ˇUõ>ıµt>˜1êA”  >≥33FH ¬«ÃÕNnk(ˇù?≥33AÇ  ‚C¡∑œ  ¿X¿     A†˜œAò≤-Aï7LAí¥9Aê-<tº;Dõ¶?`bM“Ò©¸;o;Dõ¶A°{AòìuAïôöAì  AêQÏ¿7	}Ç‘¿7â’Q÷å¿7•ÃcÒA ¿7›“Ò©˚Á¿7ÒLD|0”                ¯ÛA;`π?µ˝gA¬†«>…@ª—ñ@Í)ªA¥ŸA%3åA?3£AZì\Aj	
+ApÖêAlGAlAÄ=úBÅ∫B`∆?oÓé?çèÚ?¢N?µ‘?…'?›¶Ç?Ò˘(@ù@ ∆√@5N@HÌò@ñîl@»À>>1ì>(Õ> Ç>ˇ∂>&(>ˆß>π>"àñ>=ee>U:>YÃe>+A>=cÁ@9yÍ*{î@8⁄-j*{î@8ß *{î@8z{**{î@8Q⁄Í*{î@8,™**{î@8´ä*{î@8J*{î@8W**{î@8=ä*{î@8 6Í*{î@78êä*{î@7Â
+*{îAÜY}@KˇË@7ÛGä*{î>S∏º+T@sÁÂÿFò¿PK9rEÌùF”¡Ü@sÁÂ@¡æƒ¿PK9Q*úª  ?Øï±>ä¡v>ﬂ^w?˘"AÖE@;ƒJˇ8°+@;gnﬂ8°+@;ä?8°+@:“Ô?8°+@:®≠8°+@:Ä√ˇ8°+@:gTﬂ8°+@:98°+@:ºø8°+@:«ˇ8°+@:Ä?8°+@9¥?8°+@8„»8°+? Ä?2·U?k
+•?òö)?±®¬?Õ∑?‡æ‡@∑ø@rÙ@ûP@∞V@∏ö@‚éü>Ë8?Ú“?˘?0mH?CZV?W‘`?l∂?â†Á?ù¨L?±®∞?≈Ç@NX@D≠?{–Ÿ?Tÿ?9¨x? µÿ?⁄.?I
+?}?& ?’°?∏?1∫>›ÿ>•m?*ã™ªÇÙ¥@: ?8°+@<E˚L5∏ì@;§”Ã5∏ì@;BÄÃ5∏ì@:ÁÆÏ5∏ì@:ß‹å5∏ì@:oàL5∏ì@:CñL5∏ì@9€
+l5∏ì@9ÉMl5∏ì@9ÖøÏ5∏ì@9ºãl5∏ì@9⁄ÚÃ5∏ì@8Èı,5∏ì>ìïÁ?≈9?;±}?ÇI?£≤˘?»y©?Í–â@+Y@j¢@hqp@>⁄a@+Í@Àë™>ƒK‘>ÁÛT?»Í?¯K?%ÿ?6Mz?G¬?iuÇ?ÖΩD?ñFD?¶wN?¯Ωﬁ@&á?∏„<?t∞»?DØ'?&ˇ?'¿>¸–Ü>ÏÇ{>Ω¬.>ûéÊ>≥º√>Ú}Ã?J˚>‚⁄√>˜x˘;Ñì˛@9Ωª5∏ì@:˛4ÛWŸw@:ïÙsWŸw@:H¸ÛWŸw@:ŒÛWŸw@9Ì}ÛWŸw@9À€ìWŸw@9¨ÏWŸw@9wÛWŸw@9NÆ3WŸw@93†sWŸw@9v≥WŸw@8´ß”WŸw@8ZU3WŸw?xÍ˝?µ≥?Ó·L@´]@& u@;Z˝@Qi£@~&Æ@í¯@°˛D@≤ü∂AA1¶>äœÀ>£›∆>ª¨!>“¶>Èà? äl?g)?#W)?:Û_?Rü≠?i¥ê?ØA?Èô>õ	ﬁ>{è">Zk=>I‚>C’>>Ω∑>:f>2≠ü>0“Ë>4Ω>5ﬂê>81è>7sl>8û)<äçL@9gìWŸw@:Ñ„&.@9¨ü#&.@9hG„&.@94h#&.@9ƒC&.@8ÍGÉ&.@8Œc&.@8ùc&.@8cd„&.@83#&.@8&.@7ãÍc&.@7#Ëc&.@(÷@L?@Ç|µ@ùB◊@¥@ÕSõ@„LÆAäÙA& ëAFrﬁAaÍàAµ˘BùŸ>Œ >ÛPü?Q?X`?,Ìƒ?>Õ±?Pt∆?rä?ä…æ?ú`Ó?≠ê@"€@-≠¢>B¥9>%∫ >j>
+2Ã>c>,¸=˛˜⁄=¯Ω`=ÁVæ=€˛=’óW=«—¸=∑nâ=–wË=~Ë@8ﬂ&.@9∫ÿŒ£á¶@9ñî£á¶@9¨£á¶@9l°N£á¶@9HùŒ£á¶@9£á¶@8ıèé£á¶@8–é£á¶@8ï%Æ£á¶@8Ng£á¶@8lN£á¶@7ç§é£á¶@78Vn£á¶@Lk«@hÈ@|Ï
+@ám°@ö)ƒ@∏Go@œ⁄7@Ì€¡AπA=°íAh∆ÍAΩ≥7B Î˛?û¶n?ª+1?÷Sø?{Ã@ÎÆ@í@ ä@:9”@U@oe@ÖÇ@∆ª´Aá>◊ƒO>ﬂi•>ÎóÑ>ˆ◊>Ôµ>› E>÷u>Ÿ™ñ>…kß>Ø‚Ã>ûÁ˝>ë†ê>éÂW>§Yáº3OO@8Œ.£á¶ ¯ÛA;`π?µ˝gA¬†«>…@ª—ñ@Í)ªA¥ŸA%3åA?3£AZì\Aj	
+ApÖêAlGAlAÄ=úBÅ∫B`∆?oÓé?çèÚ?¢N?µ‘?…'?›¶Ç?Ò˘(@ù@ ∆√@5N@HÌò@ñîl@»À>>1ì>(Õ> Ç>ˇ∂>&(>ˆß>π>"àñ>=ee>U:>YÃe>+A>=cÁ@9·¡XF@8ÿïAXF@8•~°XF@8x„XF@8PB¡XF@8+XF@8aXF@8z!XF@8øXF@8•aXF@7˛û¡XF@76¯aXF@7L·XFAÜY}@KˇË@7ÒØaXF>S∏º+T@sÁÂÿFò¿PK9rEÌùF”¡Ü@sÁÂ@¡æƒ¿PK9Q*úª  ?Øï±>ä¡v>ﬂ^w?˘"AÖE@;ƒJˇ8°+@;gnﬂ8°+@;ä?8°+@:“Ô?8°+@:®≠8°+@:Ä√ˇ8°+@:gTﬂ8°+@:98°+@:ºø8°+@:«ˇ8°+@:Ä?8°+@9¥?8°+@8„»8°+? Ä?2·U?k
+•?òö)?±®¬?Õ∑?‡æ‡@∑ø@rÙ@ûP@∞V@∏ö@‚éü>Ë8?Ú“?˘?0mH?CZV?W‘`?l∂?â†Á?ù¨L?±®∞?≈Ç@NX@D≠?{–Ÿ?Tÿ?9¨x? µÿ?⁄.?I
+?}?& ?’°?∏?1∫>›ÿ>•m?*ã™ªÇÙ¥@: ?8°+@<E˚L5∏ì@;§”Ã5∏ì@;BÄÃ5∏ì@:ÁÆÏ5∏ì@:ß‹å5∏ì@:oàL5∏ì@:CñL5∏ì@9€
+l5∏ì@9ÉMl5∏ì@9ÖøÏ5∏ì@9ºãl5∏ì@9⁄ÚÃ5∏ì@8Èı,5∏ì>ìïÁ?≈9?;±}?ÇI?£≤˘?»y©?Í–â@+Y@j¢@hqp@>⁄a@+Í@Àë™>ƒK‘>ÁÛT?»Í?¯K?%ÿ?6Mz?G¬?iuÇ?ÖΩD?ñFD?¶wN?¯Ωﬁ@&á?∏„<?t∞»?DØ'?&ˇ?'¿>¸–Ü>ÏÇ{>Ω¬.>ûéÊ>≥º√>Ú}Ã?J˚>‚⁄√>˜x˘;Ñì˛@9Ωª5∏ì@:˛4ÛWŸw@:ïÙsWŸw@:H¸ÛWŸw@:ŒÛWŸw@9Ì}ÛWŸw@9À€ìWŸw@9¨ÏWŸw@9wÛWŸw@9NÆ3WŸw@93†sWŸw@9v≥WŸw@8´ß”WŸw@8ZU3WŸw?xÍ˝?µ≥?Ó·L@´]@& u@;Z˝@Qi£@~&Æ@í¯@°˛D@≤ü∂AA1¶>äœÀ>£›∆>ª¨!>“¶>Èà? äl?g)?#W)?:Û_?Rü≠?i¥ê?ØA?Èô>õ	ﬁ>{è">Zk=>I‚>C’>>Ω∑>:f>2≠ü>0“Ë>4Ω>5ﬂê>81è>7sl>8û)<äçL@9gìWŸw@:Ñ„&.@9¨ü#&.@9hG„&.@94h#&.@9ƒC&.@8ÍGÉ&.@8Œc&.@8ùc&.@8cd„&.@83#&.@8&.@7ãÍc&.@7#Ëc&.@(÷@L?@Ç|µ@ùB◊@¥@ÕSõ@„LÆAäÙA& ëAFrﬁAaÍàAµ˘BùŸ>Œ >ÛPü?Q?X`?,Ìƒ?>Õ±?Pt∆?rä?ä…æ?ú`Ó?≠ê@"€@-≠¢>B¥9>%∫ >j>
+2Ã>c>,¸=˛˜⁄=¯Ω`=ÁVæ=€˛=’óW=«—¸=∑nâ=–wË=~Ë@8ﬂ&.@9∫ÿŒ£á¶@9ñî£á¶@9¨£á¶@9l°N£á¶@9HùŒ£á¶@9£á¶@8ıèé£á¶@8–é£á¶@8ï%Æ£á¶@8Ng£á¶@8lN£á¶@7ç§é£á¶@78Vn£á¶@Lk«@hÈ@|Ï
+@ám°@ö)ƒ@∏Go@œ⁄7@Ì€¡AπA=°íAh∆ÍAΩ≥7B Î˛?û¶n?ª+1?÷Sø?{Ã@ÎÆ@í@ ä@:9”@U@oe@ÖÇ@∆ª´Aá>◊ƒO>ﬂi•>ÎóÑ>ˆ◊>Ôµ>› E>÷u>Ÿ™ñ>…kß>Ø‚Ã>ûÁ˝>ë†ê>éÂW>§Yáº3OO@8Œ.£á¶        @sÁ‰éoôÏ¿PK:áOÍ˙Aàôö=¬è\AÄ∞!>VAF˘€øÄ  AøÄ  nnnn ¯ÛA;`π?µ˝gA¬†«>…@ª—ñ@Í)ªA¥ŸA%3åA?3£AZì\Aj	
+ApÖêAlGAlAÄ=úBÅ∫B`∆?oÓé?çèÚ?¢N?µ‘?…'?›¶Ç?Ò˘(@ù@ ∆√@5N@HÌò@ñîl@»À>>1ì>(Õ> Ç>ˇ∂>&(>ˆß>π>"àñ>=ee>U:>YÃe>+A>=cÁ@9yÍ*{î@8⁄-j*{î@8ß *{î@8z{**{î@8Q⁄Í*{î@8,™**{î@8´ä*{î@8J*{î@8W**{î@8=ä*{î@8 6Í*{î@78êä*{î@7Â
+*{îAÜY}@KˇË@7ÛGä*{î>S∏º+T@sÁÂÿFò¿PK9rEÌùF”¡Ü@sÁÂ@¡æƒ¿PK9Q*úª  ?Øï±>ä¡v>ﬂ^w?˘"AÖE@;ƒJˇ8°+@;gnﬂ8°+@;ä?8°+@:“Ô?8°+@:®≠8°+@:Ä√ˇ8°+@:gTﬂ8°+@:98°+@:ºø8°+@:«ˇ8°+@:Ä?8°+@9¥?8°+@8„»8°+? Ä?2·U?k
+•?òö)?±®¬?Õ∑?‡æ‡@∑ø@rÙ@ûP@∞V@∏ö@‚éü>Ë8?Ú“?˘?0mH?CZV?W‘`?l∂?â†Á?ù¨L?±®∞?≈Ç@NX@D≠?{–Ÿ?Tÿ?9¨x? µÿ?⁄.?I
+?}?& ?’°?∏?1∫>›ÿ>•m?*ã™ªÇÙ¥@: ?8°+@<E˚L5∏ì@;§”Ã5∏ì@;BÄÃ5∏ì@:ÁÆÏ5∏ì@:ß‹å5∏ì@:oàL5∏ì@:CñL5∏ì@9€
+l5∏ì@9ÉMl5∏ì@9ÖøÏ5∏ì@9ºãl5∏ì@9⁄ÚÃ5∏ì@8Èı,5∏ì>ìïÁ?≈9?;±}?ÇI?£≤˘?»y©?Í–â@+Y@j¢@hqp@>⁄a@+Í@Àë™>ƒK‘>ÁÛT?»Í?¯K?%ÿ?6Mz?G¬?iuÇ?ÖΩD?ñFD?¶wN?¯Ωﬁ@&á?∏„<?t∞»?DØ'?&ˇ?'¿>¸–Ü>ÏÇ{>Ω¬.>ûéÊ>≥º√>Ú}Ã?J˚>‚⁄√>˜x˘;Ñì˛@9Ωª5∏ì@:˛4ÛWŸw@:ïÙsWŸw@:H¸ÛWŸw@:ŒÛWŸw@9Ì}ÛWŸw@9À€ìWŸw@9¨ÏWŸw@9wÛWŸw@9NÆ3WŸw@93†sWŸw@9v≥WŸw@8´ß”WŸw@8ZU3WŸw?xÍ˝?µ≥?Ó·L@´]@& u@;Z˝@Qi£@~&Æ@í¯@°˛D@≤ü∂AA1¶>äœÀ>£›∆>ª¨!>“¶>Èà? äl?g)?#W)?:Û_?Rü≠?i¥ê?ØA?Èô>õ	ﬁ>{è">Zk=>I‚>C’>>Ω∑>:f>2≠ü>0“Ë>4Ω>5ﬂê>81è>7sl>8û)<äçL@9gìWŸw@:Ñ„&.@9¨ü#&.@9hG„&.@94h#&.@9ƒC&.@8ÍGÉ&.@8Œc&.@8ùc&.@8cd„&.@83#&.@8&.@7ãÍc&.@7#Ëc&.@(÷@L?@Ç|µ@ùB◊@¥@ÕSõ@„LÆAäÙA& ëAFrﬁAaÍàAµ˘BùŸ>Œ >ÛPü?Q?X`?,Ìƒ?>Õ±?Pt∆?rä?ä…æ?ú`Ó?≠ê@"€@-≠¢>B¥9>%∫ >j>
+2Ã>c>,¸=˛˜⁄=¯Ω`=ÁVæ=€˛=’óW=«—¸=∑nâ=–wË=~Ë@8ﬂ&.@9∫ÿŒ£á¶@9ñî£á¶@9¨£á¶@9l°N£á¶@9HùŒ£á¶@9£á¶@8ıèé£á¶@8–é£á¶@8ï%Æ£á¶@8Ng£á¶@8lN£á¶@7ç§é£á¶@78Vn£á¶@Lk«@hÈ@|Ï
+@ám°@ö)ƒ@∏Go@œ⁄7@Ì€¡AπA=°íAh∆ÍAΩ≥7B Î˛?û¶n?ª+1?÷Sø?{Ã@ÎÆ@í@ ä@:9”@U@oe@ÖÇ@∆ª´Aá>◊ƒO>ﬂi•>ÎóÑ>ˆ◊>Ôµ>› E>÷u>Ÿ™ñ>…kß>Ø‚Ã>ûÁ˝>ë†ê>éÂW>§Yáº3OO@8Œ.£á¶ ¯Û?ÚQÇ©ì·?Ïñªò«‚Ç?ˆHÀí:*?òr∞?Vá+?≤ïÍ?‰9¨  >ÃÃÕE1ö= ?ÎÖ@Å¢ú ?Ωp§?Zú˛  ⁄?˛7ã  ¿X¿     AøÒ™A¡Â`Aπ»¥A≤˝ÙA≥Cñ?9ôö?Dõ¶?ÀCïÅ$›>z·>ÎÖA¬˜œAæÃÕAπx’A≥QÏA±∞!¿5©~∫Ò6¿6HOãXé¿6”o~=¿6¡5Tu£¿6Ÿ]Nè∞ˇˇˇˇˇˇˇˇˇˇ           ?ÉAıµÿ@ä+≥A∫@⁄>VSA≠≠˘A⁄,êBNBxãB+∆B?6BU|áBx:(Bäi_Bñ\Bñ+‚BÑ(Bq≤A@hïﬂ@ÜÔy@ôßn@≠	S@øz@–E @‚7öAÙ9Aÿ≈A$ÈÅA5aBAÉØA´8&>:'ç>+Ú=>"´>Ãñ>Û˜>h“>L#>´W>{€>v2>'ÂÇ>äèQ>ƒÚŒ@7´Èj*{î@7lÑJ*{î@78˝ *{î@7GÍ*{î@6ÓQ *{î@6–ÖÍ*{î@6±Â
+*{î@6á¸Í*{î@6iÆä*{î@6R´
+*{î@6SJ*{î@6v¢**{î@6èf
+*{îBÇ>*AE{@6zó
+*{î>RK=í*3@s„Ö5(o¿PB‘òPñ"F/˝F·≥@s„É˘ˆ°¿PB”¯F˚t  ?Ã¢`>øΩ®?$è?¯ÑA¡»@X¿Û'Œ(K@X¿Û'Œ(K@X¿Û'Œ(K@X¿Û'Œ(K@X¿Û'Œ(K@X¿Û'Œ(K@X¿Û'Œ(K@X¿Û'Œ(K@X¿Û'Œ(K@X¿Û'Œ(K@X¿Û'Œ(K@X¿Û'Œ(K@X¿Û'Œ(K                                                                                                        B∆  B∆  B∆  B∆  B∆  B∆  B∆  B∆  B∆  B∆  B∆  B∆  B∆  B∆  8ù,ë@X¿Û'Œ(K@Xª+n%@Xª+n%@Xª+n%@Xª+n%@Xª+n%@Xª+n%@Xª+n%@Xª+n%@Xª+n%@Xª+n%@Xª+n%@Xª+n%@Xª+n%                                                                                                        B∆  B∆  B∆  B∆  B∆  B∆  B∆  B∆  B∆  B∆  B∆  B∆  B∆  B∆  ;oæ@Xª+n%@:„˙SWŸw@:êÅìWŸw@:GPsWŸw@:¡sWŸw@9«“≥WŸw@9ïU”WŸw@9d;ÛWŸw@9(ÛWŸw@8√˝ÛWŸw@8ÅC3WŸw@8GÎ≥WŸw@7eÏ”WŸw@6≈“ìWŸw?à∆é?∏Øã?Rø@∆•@>L@cıó@à ª@∫	∫@ÚŸAﬂ_A=!A’:ôB=©                                                                                                            æ|K@8+ìWŸw@;Â#&.@;ëçc&.@;H\C&.@;ÕC&.@:»ﬁÉ&.@:ña£&.@:eG√&.@:4√&.@9≈	√&.@9ÇO&.@9H˜É&.@8f¯£&.@7Ü√&.>”=Ä?ùÛ?9î√?m~ˇ?íÀG?∞ï?“˘@©H@:Ïy@m•/@íSA$®ëA∏Á>                                                @TFà                                                >ñ    Ω¨®q@97c&.@;fßn£á¶@;.Æ£á¶@:…˝é£á¶@:Öné£á¶@:JŒ£á¶@:£á¶@9ÊÈ£á¶@9è÷£á¶@9F´£á¶@9n£á¶@8 òŒ£á¶@7ËôÓ£á¶@7HÆ£á¶?/q|?lÂÂ?ö!‰?≈?Ù?Û÷"@3Á@.sº@n°Û@õ?[@≈_´@ÚòÒAà¡\AÛGe                                                                                                            æéÊ@8öÿÆ£á¶ ?ÉAıµÿ@ä+≥A∫@⁄>VSA≠≠˘A⁄,êBNBxãB+∆B?6BU|áBx:(Bäi_Bñ\Bñ+‚BÑ(Bq≤A@hïﬂ@ÜÔy@ôßn@≠	S@øz@–E @‚7öAÙ9Aÿ≈A$ÈÅA5aBAÉØA´8&>:'ç>+Ú=>"´>Ãñ>Û˜>h“>L#>´W>{€>v2>'ÂÇ>äèQ>ƒÚŒ@7™QAXF@7jÏ!XF@77e°XF@7Ø¡XF@6Ïπ°XF@6ŒÌ¡XF@6∞L·XF@6Üd¡XF@6haXF@6Q·XF@6Ql!XF@6u
+XF@6çÕ·XFBÇ>*AE{@6x˛·XF>RK=í*3@s„Ö5(o¿PB‘òPñ"F/˝F·≥@s„É˘ˆ°¿PB”¯F˚t  ?Ã¢`>øΩ®?$è?¯ÑA¡»@X¿Û'Œ(K@X¿Û'Œ(K@X¿Û'Œ(K@X¿Û'Œ(K@X¿Û'Œ(K@X¿Û'Œ(K@X¿Û'Œ(K@X¿Û'Œ(K@X¿Û'Œ(K@X¿Û'Œ(K@X¿Û'Œ(K@X¿Û'Œ(K@X¿Û'Œ(K                                                                                                        B∆  B∆  B∆  B∆  B∆  B∆  B∆  B∆  B∆  B∆  B∆  B∆  B∆  B∆  8ù,ë@X¿Û'Œ(K@Xª+n%@Xª+n%@Xª+n%@Xª+n%@Xª+n%@Xª+n%@Xª+n%@Xª+n%@Xª+n%@Xª+n%@Xª+n%@Xª+n%@Xª+n%                                                                                                        B∆  B∆  B∆  B∆  B∆  B∆  B∆  B∆  B∆  B∆  B∆  B∆  B∆  B∆  ;oæ@Xª+n%@:„˙SWŸw@:êÅìWŸw@:GPsWŸw@:¡sWŸw@9«“≥WŸw@9ïU”WŸw@9d;ÛWŸw@9(ÛWŸw@8√˝ÛWŸw@8ÅC3WŸw@8GÎ≥WŸw@7eÏ”WŸw@6≈“ìWŸw?à∆é?∏Øã?Rø@∆•@>L@cıó@à ª@∫	∫@ÚŸAﬂ_A=!A’:ôB=©                                                                                                            æ|K@8+ìWŸw@;Â#&.@;ëçc&.@;H\C&.@;ÕC&.@:»ﬁÉ&.@:ña£&.@:eG√&.@:4√&.@9≈	√&.@9ÇO&.@9H˜É&.@8f¯£&.@7Ü√&.>”=Ä?ùÛ?9î√?m~ˇ?íÀG?∞ï?“˘@©H@:Ïy@m•/@íSA$®ëA∏Á>                                                @TFà                                                >ñ    Ω¨®q@97c&.@;fßn£á¶@;.Æ£á¶@:…˝é£á¶@:Öné£á¶@:JŒ£á¶@:£á¶@9ÊÈ£á¶@9è÷£á¶@9F´£á¶@9n£á¶@8 òŒ£á¶@7ËôÓ£á¶@7HÆ£á¶?/q|?lÂÂ?ö!‰?≈?Ù?Û÷"@3Á@.sº@n°Û@õ?[@≈_´@ÚòÒAà¡\AÛGe                                                                                                            æéÊ@8öÿÆ£á¶        @s„pâ’◊¿PB—vYSAäÅ=€"—AÉ^5>,1AHI∫øÄ  A
+$›øÄ  nnnn ?ÉAıµÿ@ä+≥A∫@⁄>VSA≠≠˘A⁄,êBNBxãB+∆B?6BU|áBx:(Bäi_Bñ\Bñ+‚BÑ(Bq≤A@hïﬂ@ÜÔy@ôßn@≠	S@øz@–E @‚7öAÙ9Aÿ≈A$ÈÅA5aBAÉØA´8&>:'ç>+Ú=>"´>Ãñ>Û˜>h“>L#>´W>{€>v2>'ÂÇ>äèQ>ƒÚŒ@7´Èj*{î@7lÑJ*{î@78˝ *{î@7GÍ*{î@6ÓQ *{î@6–ÖÍ*{î@6±Â
+*{î@6á¸Í*{î@6iÆä*{î@6R´
+*{î@6SJ*{î@6v¢**{î@6èf
+*{îBÇ>*AE{@6zó
+*{î>RK=í*3@s„Ö5(o¿PB‘òPñ"F/˝F·≥@s„É˘ˆ°¿PB”¯F˚t  ?Ã¢`>øΩ®?$è?¯ÑA¡»@X¿Û'Œ(K@X¿Û'Œ(K@X¿Û'Œ(K@X¿Û'Œ(K@X¿Û'Œ(K@X¿Û'Œ(K@X¿Û'Œ(K@X¿Û'Œ(K@X¿Û'Œ(K@X¿Û'Œ(K@X¿Û'Œ(K@X¿Û'Œ(K@X¿Û'Œ(K                                                                                                        B∆  B∆  B∆  B∆  B∆  B∆  B∆  B∆  B∆  B∆  B∆  B∆  B∆  B∆  8ù,ë@X¿Û'Œ(K@Xª+n%@Xª+n%@Xª+n%@Xª+n%@Xª+n%@Xª+n%@Xª+n%@Xª+n%@Xª+n%@Xª+n%@Xª+n%@Xª+n%@Xª+n%                                                                                                        B∆  B∆  B∆  B∆  B∆  B∆  B∆  B∆  B∆  B∆  B∆  B∆  B∆  B∆  ;oæ@Xª+n%@:„˙SWŸw@:êÅìWŸw@:GPsWŸw@:¡sWŸw@9«“≥WŸw@9ïU”WŸw@9d;ÛWŸw@9(ÛWŸw@8√˝ÛWŸw@8ÅC3WŸw@8GÎ≥WŸw@7eÏ”WŸw@6≈“ìWŸw?à∆é?∏Øã?Rø@∆•@>L@cıó@à ª@∫	∫@ÚŸAﬂ_A=!A’:ôB=©                                                                                                            æ|K@8+ìWŸw@;Â#&.@;ëçc&.@;H\C&.@;ÕC&.@:»ﬁÉ&.@:ña£&.@:eG√&.@:4√&.@9≈	√&.@9ÇO&.@9H˜É&.@8f¯£&.@7Ü√&.>”=Ä?ùÛ?9î√?m~ˇ?íÀG?∞ï?“˘@©H@:Ïy@m•/@íSA$®ëA∏Á>                                                @TFà                                                >ñ    Ω¨®q@97c&.@;fßn£á¶@;.Æ£á¶@:…˝é£á¶@:Öné£á¶@:JŒ£á¶@:£á¶@9ÊÈ£á¶@9è÷£á¶@9F´£á¶@9n£á¶@8 òŒ£á¶@7ËôÓ£á¶@7HÆ£á¶?/q|?lÂÂ?ö!‰?≈?Ù?Û÷"@3Á@.sº@n°Û@õ?[@≈_´@ÚòÒAà¡\AÛGe                                                                                                            æéÊ@8öÿÆ£á¶ ?É¿è8     ¿è8     ¿è8             @¿  Nnk(ˇùˇú¬«ÃÕDˇ‰) ¬«ÃÕNnk(ˇù¬«ÃÕNnk(ˇù       ¿X¿     B∆  B∆  Aπ∫^A¡˝ÙAΩïÅB∆  B∆                  ƒy¿ ƒy¿ ƒy¿ ƒy¿ ƒy¿ ¿è8     ¿è8     @èÒ∫mÔ«§@è˘˛ÅE˛@èıñH˛ˇˇˇˇ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
